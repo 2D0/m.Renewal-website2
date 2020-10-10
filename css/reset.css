@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size:14px;
+    line-height:1.4em;
+}
+img{
+    border:none;
+    vertical-align:top;
+}
+a{
+    color:#111;
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6,div,p,ul,ol,li,dl,dt,dd{
+    box-sizing:border-box;
+}
+ul,ol{
+    list-style:none;
+}
+address{
+    font-style:normal;
+}
+.cf{}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
