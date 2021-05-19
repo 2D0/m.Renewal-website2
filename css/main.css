@@ -786,6 +786,15 @@ nav:hover i:after{
     }
 }
 
+@media screen and (max-width: 400px){
+    .intro .grassOne .oR {
+        right: -157%;
+    }
+    .intro .grassOne .oL {
+        left: -156%;
+    }
+}
+
 
 
 
