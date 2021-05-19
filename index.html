@@ -6,10 +6,17 @@
     <title>성실한 웹퍼블리셔 이다영입니다.</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <!-- 애니메이트.css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <!-- 제이쿼리 cdn -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- AOS.js cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jaquery-3.4.1.min.js"></script> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -52,9 +59,7 @@
                         data-aos-offset="-100"
                         data-aos-delay="0"
                         data-aos-duration="1300"
-                        data-aos-mirror="true"
                         data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
                     >
                         <span>배경</span>
                         <span>배경</span>
@@ -67,9 +72,7 @@
                             data-aos-offset="-100"
                             data-aos-delay="0"
                             data-aos-duration="1300"
-                            data-aos-mirror="true"
                             data-aos-once="false"
-                            data-aos-anchor-placement="top-center"
                         >
                             <div class="left">
                                 <div>
@@ -139,15 +142,51 @@
                         </div><!--.writeBox-->
                     </div><!--.bg-->
                 </div><!--.inner-->
-                
             </section><!--.introduce-->
+
+            <section
+                class="swiper-slide skill"
+                data-aos="fade-right"
+                data-aos-offset="250"
+                data-aos-delay="0"
+                data-aos-duration="1200"
+                data-aos-once="false"
+            >
+                
+                <div class="inner">
+                    <ul class="title">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>jQuery</li>
+                        <li>Photoshop CS6</li>
+                        <li>Illustrator CS6</li>
+                        <li>I Movie</li>
+                    </ul><!--.title-->
+                    <ul class="bar">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>jQuery</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>I Movie</li>
+                    </ul><!--.bar-->
+
+                    <div class="whiteFlower">
+                        <!-- <div class="flowerR"></div> --><!--.flowerR-->
+                        <div class="flowerL">
+                            <img src="img/whiteflowerL.png" alt="스킬 꽃">
+                        </div><!--.flowerL-->
+                    </div><!--.whiteFlower-->
+                    
+                </div><!--.inner-->
+            </section><!--.skill-->
+
 </div><!--#container-->
          
-
+<!-- AOS.js 시작 명령 -->
 <script>
     AOS.init(
 
-    
     );
   </script>
 </body>
