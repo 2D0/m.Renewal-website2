@@ -781,6 +781,9 @@ nav:hover i:after{
     .introduce .inner .bg .keyword li p {
         width: 95%;
     }
+    .introduce .inner .bg .keyword li span {
+        font-size: 1em;
+    }
 }
 
 
