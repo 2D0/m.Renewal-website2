@@ -618,7 +618,7 @@ nav:hover i:after{
 .work_list h1{
     font-size:2em;
     text-align:center;
-    background:rgba(165 48 12);
+    background:rgba(84 113 83);
     color:#fff;
     padding:3% 0;
 
@@ -648,8 +648,24 @@ nav:hover i:after{
     cursor:pointer;
 }
 
+.tab_menu ul .tab_btn .tab1_btn, .tab6_btn, .tab12_btn{
+    background:rgba(97 136 94)
+}
+.tab_menu ul .tab_btn .tab2_btn, .tab7_btn, .tab13_btn{
+    background:rgba(121 167 119)
+}
+.tab_menu ul .tab_btn .tab3_btn, .tab8_btn, .tab14_bt{
+    background:rgba(135 179 134)
+}
+.tab_menu ul .tab_btn .tab4_btn, .tab9_btn, .tab15_bt{
+    background:rgba(147 183 147)
+}
+.tab_menu ul .tab_btn .tab5_btn, .tab10_btn, .tab11_btn, .tab16_bt{
+    background:rgba(173 195 172);
+}
+
 /* 펜션버튼 디자인 */
-.tab_menu ul .tab_btn .tab1_btn{
+/* .tab_menu ul .tab_btn .tab1_btn{
     background:rgba(235, 99, 95)
 }
 .tab_menu ul .tab_btn .tab2_btn{
@@ -664,9 +680,9 @@ nav:hover i:after{
 .tab_menu ul .tab_btn .tab5_btn{
     background:rgba(228, 177, 174)
 }
-
+ */
 /* 기업버튼 디자인 */
-.tab_menu ul .tab_btn .tab6_btn{
+/* .tab_menu ul .tab_btn .tab6_btn{
     background:rgba(38, 120, 228)
 }
 .tab_menu ul .tab_btn .tab7_btn{
@@ -684,9 +700,9 @@ nav:hover i:after{
 .tab_menu ul .tab_btn .tab11_btn{
     background:rgba(144, 173, 211)
 }
-
+ */
 /* 모바일 및 포폴 디자인 */
-.tab_menu ul .tab_btn .tab12_btn{
+/* .tab_menu ul .tab_btn .tab12_btn{
     background:rgba(230, 191, 66)
 }
 .tab_menu ul .tab_btn .tab13_btn{
@@ -700,7 +716,7 @@ nav:hover i:after{
 }
 .tab_menu ul .tab_btn .tab16_btn{
     background:rgba(235, 216, 156)
-}
+} */
 
 
 /* 탭 클릭시 라벨 디자인 */
