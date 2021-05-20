@@ -487,7 +487,6 @@ nav:hover i:after{
 /* 스킬 구간  -----------------------------------------  */
 
 .skill{
-    width:100%;
     height:925px;
     overflow:hidden;
 }
@@ -607,12 +606,269 @@ nav:hover i:after{
 
 
 
+/* 워크리스트 구간  -----------------------------------------  */
+
+.work_list{
+    /* height:1500px; */
+    margin-top: 9%;
+}
+.work_list .inner{
+    width:1100px;
+}
+.work_list h1{
+    font-size:2em;
+    text-align:center;
+    background:rgba(165 48 12);
+    color:#fff;
+    padding:3% 0;
+
+}
+
+.tab_menu{
+    width:100%;
+}
+.tab_menu ul{}
+.tab_menu ul li{
+    background:#ddd;
+}
+.tab_menu ul .tab_btn{
+    width:100%;
+    text-align:center;
+}
+.tab_menu input{
+    display:none;
+}
+.tab_menu ul .tab_btn label{
+    display:block;
+    width:100%;
+    font-size:1.3em;
+    padding:2.3% 0;
+    color:#fff;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+/* 펜션버튼 디자인 */
+.tab_menu ul .tab_btn .tab1_btn{
+    background:rgba(235, 99, 95)
+}
+.tab_menu ul .tab_btn .tab2_btn{
+    background:rgba(224, 119, 115)
+}
+.tab_menu ul .tab_btn .tab3_btn{
+    background:rgba(218, 132, 129)
+}
+.tab_menu ul .tab_btn .tab4_btn{
+    background:rgba(223, 155, 152)
+}
+.tab_menu ul .tab_btn .tab5_btn{
+    background:rgba(228, 177, 174)
+}
+
+/* 기업버튼 디자인 */
+.tab_menu ul .tab_btn .tab6_btn{
+    background:rgba(38, 120, 228)
+}
+.tab_menu ul .tab_btn .tab7_btn{
+    background:rgba(68, 138, 231)
+}
+.tab_menu ul .tab_btn .tab8_btn{
+    background:rgba(84, 146, 226)
+}
+.tab_menu ul .tab_btn .tab9_btn{
+    background:rgba(103, 153, 218)
+}
+.tab_menu ul .tab_btn .tab10_btn{
+    background:rgba(127, 166, 218)
+}
+.tab_menu ul .tab_btn .tab11_btn{
+    background:rgba(144, 173, 211)
+}
+
+/* 모바일 및 포폴 디자인 */
+.tab_menu ul .tab_btn .tab12_btn{
+    background:rgba(230, 191, 66)
+}
+.tab_menu ul .tab_btn .tab13_btn{
+    background:rgba(228, 196, 93)
+}
+.tab_menu ul .tab_btn .tab14_btn{
+    background:rgba(233, 206, 116)
+}
+.tab_menu ul .tab_btn .tab15_btn{
+    background:rgba(235, 212, 137)
+}
+.tab_menu ul .tab_btn .tab16_btn{
+    background:rgba(235, 216, 156)
+}
+
+
+/* 탭 클릭시 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab_click{
+
+}
+
+
+/* 컨텐츠 디자인 */
+.tab_menu ul .tab_btn .cont{
+    height:0;
+    /* padding:1% 0; */
+    background:#ddd
+}
+.tab_menu ul .tab_btn .cont .go_now{
+    width:40%;
+    margin:0 auto;
+    /* margin-bottom:1%; */
+}
+.tab_menu .pension .tab_btn .cont .go_now a{
+    background:#9e5050;
+}
+.tab_menu .pension .tab_btn .cont .go_now a:hover{
+    background:#8a3131;
+    transition:all .3s;
+}
+.tab_menu .company .tab_btn .cont .go_now a{
+    background:#506b9e;
+}
+.tab_menu .company .tab_btn .cont .go_now a:hover{
+    background:#2e4f8e;
+    transition:all .3s;
+}
+.tab_menu .mobile .tab_btn .cont .go_now a{
+    background:#fba637;
+}
+.tab_menu .mobile .tab_btn .cont .go_now a:hover {
+    background:#f1922d;
+    transition:all .3s;
+}
+.tab_menu ul .tab_btn .cont .go_now a{
+    display:none;
+    width:100%;
+    padding:4% 0;
+    margin: 4% 0;
+    color:#fff;
+    font-weight:bold;
+    border-radius:10px;
+    font-size:1.5em;
+}
+.tab_menu ul .tab_btn .cont .inner2{
+    width: 40%;
+    padding:4% 3%;
+    margin:0 auto;
+    background:#fff;
+    text-align:left;
+}
+.tab_menu ul .tab_btn .cont .inner2 span{
+    display:none;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.safari{
+    
+}
+
+/* 탭 클릭시 컨텐츠*/
+.tab_menu ul .tab_btn input:checked ~ .cont{
+    height:350px;
+    transition:all .5s;
+}
+.tab_menu ul .tab_btn input:checked ~ .cont .inner2 span
+{
+    display:block;
+}
+.tab_menu ul .tab_btn input:checked ~ .cont .go_now a
+{
+    display:block;
+}
+
+
+/* 닫기 버튼 디자인 */
+.closer_btn{    
+    position:fixed;
+    top:0;
+    right:0;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:rgb(112, 148, 105);
+    color:#fff;
+    cursor:pointer;
+}
+.closer_btn p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.closer_btn span{
+    display:block;
+    width:25px;
+    height:1px;
+    background:#fff;
+    text-indent:-9999px;
+}
+/* .closer_btn span:first-child{
+    transform:rotate(45deg)
+}
+.closer_btn span:last-child{
+    transform:rotate(-45deg)
+} */
+
+/* 닫기버튼 클릭시 디자인 */
+.tab_menu ul .tab_btn input:checked + .closer_click{
+
+}
+
+.tab_menu .close:checked ~ .cont{
+    height:0;
+    transition: all .5s;
+}
+
+@media screen and (max-width:768px){
+    h1 {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:500px){
+    h1 {
+        font-size: 1.2em;
+        padding:4% 0;
+    }
+    .tab_menu ul .tab_btn .cont {
+        /* padding: 4% 0; */
+    }
+
+    .tab_menu ul .tab_btn .cont .go_now {
+        width: 90%;
+    }
+    .tab_menu ul .tab_btn .cont .go_now a {
+        padding: 4% 0
+    }
+    .tab_menu ul .tab_btn .cont .inner{
+        width: 90%;
+    }
+    .tab_menu ul .tab_btn .cont .go_now {
+        width: 90%;}
+    .tab_menu ul .tab_btn .cont .go_now a {
+        padding: 4% 0
+    }
+    .work_list h1 {
+        font-size: 1.2em;
+    }
+    .tab_menu ul .tab_btn input:checked ~ .cont {
+        height: 250px;
+    }
+}
+@media screen and (max-width:500px){
+
+}
 
 
 
-
-
-
+.height_top{
+    height:100px;
+}
 
 /* --------------------------미디어쿼리---------------------------- */
 
@@ -702,10 +958,10 @@ nav:hover i:after{
 
     /* 스킬 꽃 */
     .skill .whiteFlower .flowerL {
-        left: -22%;
+        left: -10%;
     }
     .skill .whiteFlower .flowerL img{
-        width:38%;
+        width: 32%;
     }
 }
 
@@ -718,6 +974,11 @@ nav:hover i:after{
     #container section .inner{
         width:100%;
     }
+    /* 인트로듀스 높이 */
+    .introduce {
+        height: 820px;
+    }
+    /* 인트로듀스 이너 너비 */
     .introduce .inner .back {
         width: 100%;
     }
@@ -731,7 +992,43 @@ nav:hover i:after{
     .introduce .grassFlower {
         display:none;
     }
-    
+
+    /* 스킬 이너 너비 */
+    .skill{
+        width:100%;
+        height: 700px;
+    }
+    .skill .inner .back {
+        width: 100%;
+    }
+    .skill .inner .bar li {
+        height: 25px;
+    }
+    .skill .inner .title li {
+        font-size: 25px;
+    }
+    /* 스킬 타이틀 위치 */
+    .skill .inner .title {
+        left: 19%;
+    }
+    /* 스킬 바 전체 */
+    .skill .inner .bar {
+        width: 50%;
+        left: 41%;
+    }
+    /* 스킬 바 길이 */
+    .skill .inner .bar li:nth-child(1), 
+    .skill .inner .bar li:nth-child(2), 
+    .skill .inner .bar li:nth-child(4), 
+    .skill .inner .bar li:nth-child(6) {
+        width: 83%;
+    }
+    .skill .inner .bar li:nth-child(5){
+        width: 62%;
+    }
+    .skill .inner .bar li:nth-child(3) {
+        width: 64%;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -778,7 +1075,14 @@ nav:hover i:after{
     .introduce .inner .bg .title {
         font-size: 3em;
     }
-    
+    /* 스킬 타이틀 */
+    .skill .inner .title {
+        left: 16%;
+    }
+    /* 스킬 바 */
+    .skill .inner .bar {
+        left: 43%;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -801,6 +1105,7 @@ nav:hover i:after{
     /* 인트로듀스 마진탑 수정 */
     .introduce {
         margin-top:0;
+        height: 1266px;
     }
     /* 인트로듀스 배경 높이*/
     .introduce .inner .back {
@@ -846,6 +1151,19 @@ nav:hover i:after{
         left: -70%;
         bottom: -102%;
     }
+
+    /* 스킬 타이틀 */
+    .skill .inner .title li {
+        font-size: 20px;
+    }
+    /* 스킬 바 */
+    .skill .inner .bar li {
+        height: 20px;
+    }
+    /* 스킬 꽃 위치 */
+    .skill .whiteFlower .flowerL {
+        bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 658px){
@@ -869,9 +1187,19 @@ nav:hover i:after{
     .intro .grassOne img {
         transform: scale(0.2);
     }
+
     /* 인트로듀스 타이틀 폰트크기 */
     .introduce .inner .bg .title {
         font-size: 2.5em;
+    }
+
+    
+    /* 스킬 바 위치 */
+    .skill .inner .title {
+        left: 10%;
+    }
+    .skill .inner .bar {
+        left: 45%;
     }
 }
 @media screen and (max-width: 500px){
@@ -883,6 +1211,7 @@ nav:hover i:after{
     .intro {
         height: 344px;
     }
+    
     /* 인트로 나뭇잎 이미지*/
     .intro .grassOne .oR {
         right: -121%;
@@ -895,13 +1224,39 @@ nav:hover i:after{
     .intro .grassOne img {
         transform: scale(0.1);
     }
-    /* 인트로듀스 타이틀 폰트사이즈 */
-    .introduce .inner .bg .title {
-        font-size: 2em;
+    /* 인트로듀스 높이 값 */
+    .introduce {
+        height: 1075px;
     }
-    /* 인트로듀스 왼쪽 폰트 */
+    /* 인트로듀스 배경 높이 값 */
+    .introduce .inner .back {
+        height: 1046px;
+    }
+    /* 인트로듀스 배경 포지션 값 */
+    .introduce .inner .back span:last-child {
+        top: 1.5%;
+        left: 3.5%;
+    }
+    /* 인트로듀스 타이틀 */
+    .introduce .inner .bg .title {
+        font-size: 1.6em;
+        padding-top: 12%;
+    }
+    /* 인트로듀스 왼쪽 전체 폰트 */
     .introduce .inner .bg .writeBox .left p {
         font-size: 1.5em;
+    }
+    /* 인트로듀스 키워드 전체 폰트 */
+    .introduce .inner .bg .keyword li span {
+        font-size: 1em;
+    }
+    /* 인트로듀스 사진 크기 */
+    .introduce .inner .bg .writeBox .left .photo img{
+        width: 37%;
+    }
+    /* 인트로듀스 이름 위 마진값 */
+    .introduce .inner .bg .writeBox .left .name {
+        margin-top: 5%;
     }
     /* 인트로듀스 오른쪽 */
     .introduce .inner .bg .writeBox .right {
@@ -912,10 +1267,56 @@ nav:hover i:after{
     .introduce .inner .bg .keyword li p {
         width: 95%;
     }
+    /* 인트로듀스 ul 마진 값 */
+    .inner .bg .writeBox .right .box .work {
+        margin-bottom: 14%;
+    }
 }
 
 
+@media screen and (max-width: 400px){
+    /* 인트로 타이틀 폰트 */
+    .intro .inner .title {
+        font-size: 2.3rem;
+    }
+    /* 인트로 왼쪽 나뭇잎 */
+    .intro .grassOne .oL {
+        left: -156%;
+    }
+    /* 인트로 오른쪽 나뭇잎 */
+    .intro .grassOne .oR {
+        right: -155%;
+    }
 
+    /* 인트로듀스 높이 */
+    .introduce {
+        height: 1050px;
+    }
+    /* 인트로듀스 배경 높이 */
+    .introduce .inner .back {
+        height: 979px;
+    }
+
+    /* 스킬 높이 */
+    .skill {
+        height: 573px;
+    }
+    /* 스킬 타이틀 */
+    
+    .skill .inner .title {
+        left: 6%;
+    }
+    .skill .inner .title li {
+        font-size: 16px;
+    }
+    /* 스킬 바 */
+    .skill .inner .bar {
+        left: 45%;
+    }
+    .skill .inner .bar li {
+        height: 16px;
+    }
+}
 
 
 
