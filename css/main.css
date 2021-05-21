@@ -629,7 +629,7 @@ nav:hover i:after{
 }
 .tab_menu ul{}
 .tab_menu ul li{
-    background:#ddd;
+    background:#fff;
 }
 .tab_menu ul .tab_btn{
     width:100%;
@@ -641,12 +641,13 @@ nav:hover i:after{
 .tab_menu ul .tab_btn label{
     display:block;
     width:100%;
-    font-size:1.3em;
-    padding:2.3% 0;
+    font-size: 1.5em;
+    padding: 3% 0;
     color:#fff;
     overflow:hidden;
     cursor:pointer;
 }
+
 
 .tab_menu ul .tab_btn .tab1_btn, .tab6_btn, .tab12_btn{
     background:rgba(97 136 94)
@@ -654,14 +655,17 @@ nav:hover i:after{
 .tab_menu ul .tab_btn .tab2_btn, .tab7_btn, .tab13_btn{
     background:rgba(121 167 119)
 }
-.tab_menu ul .tab_btn .tab3_btn, .tab8_btn, .tab14_bt{
+.tab_menu ul .tab_btn .tab3_btn, .tab8_btn, .tab14_btn{
     background:rgba(135 179 134)
 }
-.tab_menu ul .tab_btn .tab4_btn, .tab9_btn, .tab15_bt{
+.tab_menu ul .tab_btn .tab4_btn, .tab9_btn, .tab15_btn{
     background:rgba(147 183 147)
 }
-.tab_menu ul .tab_btn .tab5_btn, .tab10_btn, .tab11_btn, .tab16_bt{
-    background:rgba(173 195 172);
+.tab_menu ul .tab_btn .tab5_btn, .tab10_btn, .tab16_btn{
+    background:rgba(155 183 153);
+}
+.tab_menu ul .tab_btn .tab11_btn{
+    background:rgba(170 195 168);
 }
 
 /* 펜션버튼 디자인 */
@@ -719,6 +723,7 @@ nav:hover i:after{
 } */
 
 
+
 /* 탭 클릭시 라벨 디자인 */
 .tab_menu ul .tab_btn input:checked + .tab_click{
 
@@ -729,13 +734,16 @@ nav:hover i:after{
 .tab_menu ul .tab_btn .cont{
     height:0;
     /* padding:1% 0; */
-    background:#ddd
+    background:#fff;
 }
 .tab_menu ul .tab_btn .cont .go_now{
     width:40%;
     margin:0 auto;
     /* margin-bottom:1%; */
 }
+
+
+/* 펜션 바로가기 버튼색 */
 .tab_menu .pension .tab_btn .cont .go_now a{
     background:#9e5050;
 }
@@ -743,6 +751,9 @@ nav:hover i:after{
     background:#8a3131;
     transition:all .3s;
 }
+
+
+/* 회사 바로가기 버튼색 */
 .tab_menu .company .tab_btn .cont .go_now a{
     background:#506b9e;
 }
@@ -750,29 +761,33 @@ nav:hover i:after{
     background:#2e4f8e;
     transition:all .3s;
 }
+
+
+/* 서브페이지 바로가기 버튼색 */
 .tab_menu .mobile .tab_btn .cont .go_now a{
-    background:#fba637;
+    background:#a56db3;
 }
 .tab_menu .mobile .tab_btn .cont .go_now a:hover {
-    background:#f1922d;
+    background:#8e5e9a;
     transition:all .3s;
 }
 .tab_menu ul .tab_btn .cont .go_now a{
     display:none;
     width:100%;
     padding:4% 0;
-    margin: 4% 0;
+    margin: 78% 0 4%;
+    /* margin: 4% 0; */
     color:#fff;
     font-weight:bold;
     border-radius:10px;
     font-size:1.5em;
 }
 .tab_menu ul .tab_btn .cont .inner2{
-    width: 40%;
-    padding:4% 3%;
-    margin:0 auto;
-    background:#fff;
-    text-align:left;
+    width: 22%;
+    padding: 1% 1% 0% 7%;
+    margin: 0 auto;
+    background: #fff;
+    text-align: left;
 }
 .tab_menu ul .tab_btn .cont .inner2 span{
     display:none;
@@ -780,26 +795,275 @@ nav:hover i:after{
     line-height: 1.5em;
 }
 
-.safari{
-    
+/* 웹사이트 이미지 */
+.tab_menu ul .tab_btn .cont .safari{
+    display:none;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* 탭 클릭시 컨텐츠*/
+
+
+
+/* 벚꽃줄기 이미지 */
+.tab_menu ul .tab_btn .cont .pink_flower{
+    display:none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+    animation:pink 12s linear infinite;
+    transform-origin:top;
+}
+/* 벚꽂줄기 애니메이션 */
+@keyframes pink{
+    0%{
+        transform:rotateZ(0deg);
+    }
+    25%{
+        transform:rotateZ(5deg);
+    }
+    50%{
+        transform:rotateZ(0deg);
+    }
+    75%{
+        transform:rotateZ(5deg);
+    }
+    100%{
+        transform:rotateZ(0deg);
+    }
+}
+
+
+
+/* 핑크색 꽃 이미지 */
+.tab_menu ul .tab_btn .cont .pink_flower2{
+    display:none;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    animation:pink2 9s linear infinite;
+    transform-origin:bottom;
+}
+
+/* 핑크색 꽃 애니메이션 */
+@keyframes pink2{
+    0%{
+        transform:rotateZ(15deg);
+    }
+    25%{
+        transform:rotateZ(20deg);
+    }
+    50%{
+        transform:rotateZ(15deg);
+    }
+    75%{
+        transform:rotateZ(20deg);
+    }
+    100%{
+        transform:rotateZ(15deg);
+    }
+}
+
+
+
+/* 왼쪽 나비 이미지 */
+.tab_menu ul .tab_btn .cont .butterfly1{
+    display:none;
+    position: absolute;
+    top: 23%;
+    left: 6%;
+    animation:but1 5s linear infinite;
+    transform-origin:top;
+}
+/* 왼쪽 나비 애니메이션 */
+@keyframes but1{
+    0%{
+        transform:translateY(-10%);
+    }
+    25%{
+        transform:rotateZ(5deg);
+    }
+    50%{
+        transform:translateY(10%);
+    }
+    75%{
+        transform:rotateZ(5deg);
+    }
+    100%{
+        transform:translateY(-10%);
+    }
+}
+
+
+/* 오른쪽 나비 이미지 */
+.tab_menu ul .tab_btn .cont .butterfly2{
+    display:none;
+    position: absolute;
+    bottom: 11%;
+    right: 8%;
+    animation:but2 5s linear infinite;
+    transform-origin:top;
+}
+/* 오른쪽 나비 애니메이션 */
+@keyframes but2{
+    0%{
+        transform:translateY(10%);
+    }
+    25%{
+        transform:rotateZ(5deg);
+    }
+    50%{
+        transform:translateY(-10%);
+    }
+    75%{
+        transform:rotateZ(5deg);
+    }
+    100%{
+        transform:translateY(10%);
+    }
+}
+
+
+
+
+/* 왼쪽 나뭇잎 이미지 */
+.tab_menu ul .tab_btn .cont .grass1{
+    display:none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: gra1 15s linear infinite;
+    transform-origin: left;
+}
+/* 오른쪽 나뭇잎 이미지 */
+.tab_menu ul .tab_btn .cont .grass2{
+    display:none;
+    position: absolute;
+    top: 12%;
+    right: 0;
+    z-index: -1;
+    animation:gra1 15s linear infinite;
+    transform-origin:right;
+}
+
+/* 양쪽 나뭇잎 애니메이션 */
+@keyframes gra1{
+    0%{
+        transform:rotateZ(-10deg);
+    }
+    25%{
+        transform:rotateZ(2deg);
+    }
+    50%{
+        transform:rotateZ(-10deg);
+    }
+    75%{
+        transform:rotateZ(2deg);
+    }
+    100%{
+        transform:rotateZ(-10deg);
+    }
+}
+
+
+
+/* 보라색 꽃 이미지 */
+.tab_menu ul .tab_btn .cont .purple_flower{
+    display:none;
+    position: absolute;
+    bottom: -2%;
+    right: 1%;
+    animation:purple 10s linear infinite;
+    transform-origin:bottom;
+}
+
+/* 보라색 꽃 애니메이션 */
+@keyframes purple{
+    0%{
+        transform:rotateZ(-10deg);
+    }
+    25%{
+        transform:rotateZ(-15deg);
+    }
+    50%{
+        transform:rotateZ(-10deg);
+    }
+    75%{
+        transform:rotateZ(-15deg);
+    }
+    100%{
+        transform:rotateZ(-10deg);
+    }
+}
+
+
+
+
+/* 탭 클릭시 컨텐츠---------------------*/
+
+/* 컨텐츠 */
 .tab_menu ul .tab_btn input:checked ~ .cont{
-    height:350px;
+    height:229px;
     transition:all .5s;
 }
-.tab_menu ul .tab_btn input:checked ~ .cont .inner2 span
-{
+
+/* 기술내용 */
+.tab_menu ul .tab_btn input:checked ~ .cont .inner2 span{
     display:block;
 }
-.tab_menu ul .tab_btn input:checked ~ .cont .go_now a
-{
+
+/* 바로가기 버튼 */
+.tab_menu ul .tab_btn input:checked ~ .cont .go_now a{
+    display:block;
+}
+
+/* 웹사이트 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .safari{
+    display:block;
+}
+
+/* 벚꽃 줄기 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .pink_flower{
+    display:block;
+}
+
+/* 핑크색 꽃 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .pink_flower2{
+    display:block;
+}
+
+/* 왼쪽 나비 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .butterfly1{
+    display:block;
+}
+
+/* 오른쪽 나비 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .butterfly2{
+    display:block;
+}
+
+/* 왼쪽 나뭇잎 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .grass1{
+    display:block;
+}
+/* 오른쪽 나뭇잎 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .grass2{
+    display:block;
+}
+
+/* 보라색 꽃 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .purple_flower{
     display:block;
 }
 
 
 /* 닫기 버튼 디자인 */
+.closeinput{
+    display:none;
+}
 .closer_btn{    
     position:fixed;
     top:0;
@@ -824,12 +1088,7 @@ nav:hover i:after{
     background:#fff;
     text-indent:-9999px;
 }
-/* .closer_btn span:first-child{
-    transform:rotate(45deg)
-}
-.closer_btn span:last-child{
-    transform:rotate(-45deg)
-} */
+
 
 /* 닫기버튼 클릭시 디자인 */
 .tab_menu ul .tab_btn input:checked + .closer_click{
@@ -841,50 +1100,14 @@ nav:hover i:after{
     transition: all .5s;
 }
 
-@media screen and (max-width:768px){
-    h1 {
-        font-size: 1.5em;
-    }
-}
-@media screen and (max-width:500px){
-    h1 {
-        font-size: 1.2em;
-        padding:4% 0;
-    }
-    .tab_menu ul .tab_btn .cont {
-        /* padding: 4% 0; */
-    }
 
-    .tab_menu ul .tab_btn .cont .go_now {
-        width: 90%;
-    }
-    .tab_menu ul .tab_btn .cont .go_now a {
-        padding: 4% 0
-    }
-    .tab_menu ul .tab_btn .cont .inner{
-        width: 90%;
-    }
-    .tab_menu ul .tab_btn .cont .go_now {
-        width: 90%;}
-    .tab_menu ul .tab_btn .cont .go_now a {
-        padding: 4% 0
-    }
-    .work_list h1 {
-        font-size: 1.2em;
-    }
-    .tab_menu ul .tab_btn input:checked ~ .cont {
-        height: 250px;
-    }
-}
-@media screen and (max-width:500px){
 
+
+/* 탭메뉴 때문에 넣은 임시 높이 */
+.height{
+    height:200px
 }
 
-
-
-.height_top{
-    height:100px;
-}
 
 /* --------------------------미디어쿼리---------------------------- */
 
@@ -1045,6 +1268,24 @@ nav:hover i:after{
     .skill .inner .bar li:nth-child(3) {
         width: 64%;
     }
+
+
+    
+
+    /* 탭메뉴 벚꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .pink_flower {
+        right: -3%;
+    }
+    .tab_menu ul .tab_btn .cont .pink_flower img{
+        width:84%;
+    }
+
+    /* 사파리 이미지 */
+    .tab_menu ul .tab_btn .cont .safari img{
+        width:77%
+    }
+
+
 }
 
 @media screen and (max-width: 1000px){
@@ -1099,6 +1340,8 @@ nav:hover i:after{
     .skill .inner .bar {
         left: 43%;
     }
+
+
 }
 
 @media screen and (max-width: 900px){
@@ -1147,6 +1390,36 @@ nav:hover i:after{
         border-right: none;
         float: none;
     }
+
+
+    /* 탭메뉴 바로가기 */
+    .tab_menu ul .tab_btn .cont .go_now a {
+        font-size: 1.3em;
+    }
+    /* 탭메뉴 기술 내용 */
+    .tab_menu ul .tab_btn .cont .inner2 {
+        width: 32%;
+        padding: 1% 1% 0% 2%;
+    }
+    
+    /* 탭메뉴 벚꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .pink_flower {
+        right: -7%;
+    }
+    .tab_menu ul .tab_btn .cont .pink_flower img{
+        width:65%;
+    }
+    /* 탭메뉴 모든 이미지 사이즈 */
+    .tab_menu ul .tab_btn .cont img{
+        width:77%;
+    }
+    /* 탭메뉴 양쪽 나뭇잎 이미지 */
+    .tab_menu ul .tab_btn .cont .grass1{
+        left:-3%;
+    }
+    .tab_menu ul .tab_btn .cont .grass2{
+        right:-4%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -1179,6 +1452,36 @@ nav:hover i:after{
     /* 스킬 꽃 위치 */
     .skill .whiteFlower .flowerL {
         bottom: 5%;
+    }
+
+    /* 경력 탭메뉴 제목 폰트 */
+    .top_title h1 {
+        font-size: 1.5em;
+    }
+
+    /* 탭메뉴 컨텐츠 높이 */
+    .tab_menu ul .tab_btn input:checked ~ .cont {
+        height: 191px;
+    }
+    /* 탭메뉴 기술 폰트 사이즈 */
+    .tab_menu ul .tab_btn .cont .inner2 span {
+        font-size: 1.1em;
+    }
+    /* 탭메뉴 모든 이미지 */
+    .tab_menu ul .tab_btn .cont img {
+        width: 70%;
+    }
+    /* 탭메뉴 핑크색 꽃 포지션 */
+    .tab_menu ul .tab_btn .cont .pink_flower2 {
+        left: -1%;
+    }
+
+    /* 탭메뉴 양쪽 나뭇잎 이미지 */
+    .tab_menu ul .tab_btn .cont .grass1{
+        left:-5%;
+    }
+    .tab_menu ul .tab_btn .cont .grass2{
+        right:-6%;
     }
 }
 
@@ -1216,6 +1519,40 @@ nav:hover i:after{
     }
     .skill .inner .bar {
         left: 45%;
+    }
+
+
+
+    /* 탭메뉴 바로가기 */
+    .tab_menu ul .tab_btn .cont .go_now a {
+        font-weight: normal;
+    }
+    /* 탭메뉴 컨텐츠 내용 너비*/
+    .tab_menu ul .tab_btn .cont .inner2 {
+        width: 43%;
+    }
+    /* 탭메뉴 벚꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .pink_flower {
+        right: -9%;
+    }
+    .tab_menu ul .tab_btn .cont .pink_flower img {
+        width: 52%;
+    }
+    /* 탭메뉴 모든 이미지 */
+    .tab_menu ul .tab_btn .cont img {
+        width: 54%;
+    }
+    
+    /* 탭메뉴 양쪽 나뭇잎 이미지 */
+    .tab_menu ul .tab_btn .cont .grass1{
+        left:-8%;
+    }
+    .tab_menu ul .tab_btn .cont .grass2{
+        right:-10%;
+    }
+    /* 탭메뉴 보라색 꽃 */
+    .tab_menu ul .tab_btn .cont .purple_flower {
+        right: -7%;
     }
 }
 @media screen and (max-width: 500px){
@@ -1287,6 +1624,50 @@ nav:hover i:after{
     .inner .bg .writeBox .right .box .work {
         margin-bottom: 14%;
     }
+
+
+
+    /* 탭메뉴 바로가기 폰트 */
+    .tab_menu ul .tab_btn .cont .go_now a {
+        font-size: 1.1em;
+    }
+    /* 탭메뉴 기술 폰트 */
+    .tab_menu ul .tab_btn .cont .inner2 span {
+        font-size: .9em;
+    }
+    /* 탭메뉴 벚꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .pink_flower {
+        right: -19%;
+    }
+    .tab_menu ul .tab_btn .cont .pink_flower img {
+        width: 39%;
+    }
+    /* 탭메뉴 모든 이미지 */
+    .tab_menu ul .tab_btn .cont img {
+        width: 37%;
+    }
+    /* 탭메뉴 분홍색 꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .pink_flower2 {
+        left: -13%;
+    }
+    /* 탭메뉴 양쪽 나비 이미지 */
+    .tab_menu ul .tab_btn .cont .butterfly1 {
+        left: -1%;
+    }
+    .tab_menu ul .tab_btn .cont .butterfly2 {
+        right: -3%;
+    }
+    /* 탭메뉴 양쪽 나뭇잎 이미지 */
+    .tab_menu ul .tab_btn .cont .grass1 {
+        left: -14%;
+    }
+    .tab_menu ul .tab_btn .cont .grass2 {
+        right: -17%;
+    }
+    /* 탭메뉴 보라색 꽃 */
+    .tab_menu ul .tab_btn .cont .purple_flower {
+        right: -16%;
+    }
 }
 
 
@@ -1331,6 +1712,73 @@ nav:hover i:after{
     }
     .skill .inner .bar li {
         height: 16px;
+    }
+
+
+    /* 탭메뉴 제목 */
+    .top_title h1 {
+        font-size: 1.1em;
+    }
+    /* 탭메뉴 라벨 */
+    .tab_menu ul .tab_btn label {
+        font-size: 1.1em;
+        padding: 3.3% 0;
+    }
+    /* 탭메뉴 이너 높이 */
+    .tab_menu ul .tab_btn input:checked ~ .cont {
+        height: 100px;
+    }
+    /* 탭메뉴 바로가기 */
+    .tab_menu ul .tab_btn .cont .go_now a {
+        font-size: .9em;
+        margin: 75% 0 4%;
+    }
+    /* 탭메뉴 기술 폰트 */
+    .tab_menu ul .tab_btn .cont .inner2 span {
+        font-size: .5em;
+    }
+    /* 탭메뉴 벚꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .pink_flower img {
+        width: 33%;
+    }
+    .tab_menu ul .tab_btn .cont .pink_flower {
+        right: -25%;
+    }
+    /* 탭메뉴 모든 이미지 */
+    .tab_menu ul .tab_btn .cont img {
+        width: 28%;
+    }
+    /* 탭메뉴 양쪽 나뭇잎 이미지 */
+    .tab_menu ul .tab_btn .cont .grass2 {
+        right: -23%;
+    }
+    .tab_menu ul .tab_btn .cont .grass1 {
+        left: -19%;
+    }
+    
+
+}
+
+@media screen and (max-width: 350px){
+
+    /* 탭메뉴 오른쪽 나비 이미지 */
+    .tab_menu ul .tab_btn .cont .butterfly1 {
+        left: -7%;
+    }
+    /* 탭메뉴 분홍색 꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .pink_flower2 {
+        left: -21%;
+    }
+    /* 탭메뉴 양쪽 나뭇잎 이미지 */
+    .tab_menu ul .tab_btn .cont .grass2 {
+        right: -25%;
+    }
+    .tab_menu ul .tab_btn .cont .grass1 {
+        left: -23%;
+    }
+    /* 탭메뉴 보라색 꽃 이미지 */
+    .tab_menu ul .tab_btn .cont .purple_flower {
+        right: -26%;
     }
 }
 
