@@ -19,3 +19,10 @@ $(function(){
 /* window.addEventListener('load', function(event){
   AOS.init();
 }}; */
+
+
+
+$(document).mousemove(function(e){
+  $('.mouse').css("top", e.pageY);
+  $('.mouse').css("left", e.pageX);
+});

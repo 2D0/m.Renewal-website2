@@ -4,7 +4,21 @@ html, body{
 }
 body{
     overflow-x:hidden;
+    cursor:none; 
 }
+
+/* 마우스 이미지 */
+.mouse{
+    position: absolute;
+    top:0;
+    left:0;
+    width:65px;
+    height:65px;
+    /* z-index:1000; */
+}
+
+
+
 /*오른쪽 페이저*/
 .pager{
     position:fixed;
@@ -359,7 +373,7 @@ nav:hover i:after{
 .introduce .inner .bg .writeBox .left{
     width: 29%;
     text-align: center;
-    font-weight:bold;
+   /*  font-weight:bold; */
     float:left;
     margin-right: 185px;
 }
@@ -376,6 +390,7 @@ nav:hover i:after{
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    margin-left: -13px;
 }
 .introduce .inner .bg .writeBox .left .photoCover{
     text-indent: -9999px;
@@ -485,6 +500,119 @@ nav:hover i:after{
 
 
 /* 스킬 구간  -----------------------------------------  */
+
+.skill_list{}
+.skill_list h2{
+    font-size:4em;
+    font-weight:bold;
+    color:#5d8e57;
+    text-align:center;
+    margin:4% 0;
+}
+.skill_list .inner{
+    position:relative;
+}
+.skill_list .inner ul{
+}
+.skill_list .inner ul li {
+    width: 11.81818181%;
+    position: absolute;
+    z-index:1;
+}
+.skill_list .inner ul li:after{
+    content:"";
+    display:block;
+    padding-bottom:100%;
+}
+.skill_list .inner ul li div{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.skill_list .inner ul li div img{
+    width:100%;
+    height:100%;
+}
+/* 스킬 열매 */
+.skill_list .inner ul .fruit1{
+    top: 3%;
+    left: 27%;
+}
+.skill_list .inner ul .fruit2{
+    top: 5%;
+    left: 43%;
+}
+.skill_list .inner ul .fruit3{
+    top: 17%;
+    left: 12%;
+}
+.skill_list .inner ul .fruit4{
+    top: 21%;
+    left: 28%;
+}
+.skill_list .inner ul .fruit5{
+    top: 25%;
+    left: 47%;
+}
+.skill_list .inner ul .fruit6{
+    top: 17%;
+    right: 23%;
+}
+.skill_list .inner ul .fruit7{
+    top: 34%;
+    left: 5%;
+}
+.skill_list .inner ul .fruit8{
+    top: 38%;
+    left: 23%;
+}
+.skill_list .inner ul .fruit9{
+    top: 41%;
+    left: 40%;
+}
+.skill_list .inner ul .fruit10{
+    top: 34%;
+    right: 27%;
+}
+.skill_list .inner ul .fruit11{
+    top: 56%;
+    left: 18%;
+}
+.skill_list .inner ul .fruit12{
+    top: 60%;
+    left: 40%;
+}
+.skill_list .inner ul .fruit13{
+    top: 51%;
+    right: 26%;
+}
+.skill_list .inner ul .fruit14{
+    top: 34%;
+    right: 9%;
+}
+
+.skill_list .inner ul li .icon{}
+.skill_list .inner ul li .icon img{}
+
+.skill_list .inner .big_tree{
+    opacity:.5;
+}
+
+.skill_list .inner .big_tree img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 스킬 구간2  -----------------------------------------  */
 
 .skill{
     height:925px;
@@ -609,13 +737,12 @@ nav:hover i:after{
 /* 워크리스트 구간  -----------------------------------------  */
 
 .work_list{
-    /* height:1500px; */
-    margin-top: 9%;
+   /*  margin-top: 9%; */
 }
 .work_list .inner{
     width:1100px;
 }
-.work_list h1{
+.work_list h2{
     font-size:2em;
     text-align:center;
     background:rgba(84 113 83);
@@ -648,83 +775,117 @@ nav:hover i:after{
     cursor:pointer;
 }
 
-
-.tab_menu ul .tab_btn .tab1_btn, .tab6_btn, .tab12_btn{
+/* 첫 번째 라벨 */
+.tab_menu ul .tab_btn .tab1_btn, 
+.tab_menu ul .tab_btn .tab6_btn, 
+.tab_menu ul .tab_btn .tab12_btn{
     background:rgba(97 136 94)
 }
-.tab_menu ul .tab_btn .tab2_btn, .tab7_btn, .tab13_btn{
+.tab_menu ul .tab_btn:hover .tab1_btn,
+.tab_menu ul .tab_btn:hover .tab6_btn,
+.tab_menu ul .tab_btn:hover .tab12_btn{
+    background:rgba(108 128 177);
+}
+
+/* 두 번째 라벨 */
+.tab_menu ul .tab_btn .tab2_btn,
+.tab_menu ul .tab_btn .tab7_btn,
+.tab_menu ul .tab_btn .tab13_btn{
     background:rgba(121 167 119)
 }
-.tab_menu ul .tab_btn .tab3_btn, .tab8_btn, .tab14_btn{
+.tab_menu ul .tab_btn:hover .tab2_btn,
+.tab_menu ul .tab_btn:hover .tab7_btn,
+.tab_menu ul .tab_btn:hover .tab13_btn{
+    background: rgba(122 139 179);
+}
+
+/* 세 번째 라벨 */
+.tab_menu ul .tab_btn .tab3_btn, 
+.tab_menu ul .tab_btn .tab8_btn, 
+.tab_menu ul .tab_btn .tab14_btn{
     background:rgba(135 179 134)
 }
-.tab_menu ul .tab_btn .tab4_btn, .tab9_btn, .tab15_btn{
-    background:rgba(147 183 147)
+.tab_menu ul .tab_btn:hover .tab3_btn, 
+.tab_menu ul .tab_btn:hover .tab8_btn, 
+.tab_menu ul .tab_btn:hover .tab14_btn{
+    background:rgba(134 147 177);
 }
-.tab_menu ul .tab_btn .tab5_btn, .tab10_btn, .tab16_btn{
+
+/* 네 번째 라벨 */
+.tab_menu ul .tab_btn .tab4_btn, 
+.tab_menu ul .tab_btn .tab9_btn, 
+.tab_menu ul .tab_btn .tab15_btn{
+    background:rgba(148 191 147);
+}
+.tab_menu ul .tab_btn:hover  .tab4_btn, 
+.tab_menu ul .tab_btn:hover  .tab9_btn, 
+.tab_menu ul .tab_btn:hover  .tab15_btn{
+    background:rgba(147 156 179);
+}
+
+/* 다섯 번째 라벨 */
+.tab_menu ul .tab_btn .tab5_btn, 
+.tab_menu ul .tab_btn .tab10_btn, 
+.tab_menu ul .tab_btn .tab16_btn{
     background:rgba(155 183 153);
 }
+.tab_menu ul .tab_btn:hover .tab5_btn, 
+.tab_menu ul .tab_btn:hover .tab10_btn, 
+.tab_menu ul .tab_btn:hover .tab16_btn{
+    background:rgba(158 165 183);
+}
+
+/* 여섯 번째 라벨 */
 .tab_menu ul .tab_btn .tab11_btn{
     background:rgba(170 195 168);
 }
-
-/* 펜션버튼 디자인 */
-/* .tab_menu ul .tab_btn .tab1_btn{
-    background:rgba(235, 99, 95)
+.tab_menu ul .tab_btn:hover .tab11_btn{
+    background:rgba(169 174 185);
 }
-.tab_menu ul .tab_btn .tab2_btn{
-    background:rgba(224, 119, 115)
-}
-.tab_menu ul .tab_btn .tab3_btn{
-    background:rgba(218, 132, 129)
-}
-.tab_menu ul .tab_btn .tab4_btn{
-    background:rgba(223, 155, 152)
-}
-.tab_menu ul .tab_btn .tab5_btn{
-    background:rgba(228, 177, 174)
-}
- */
-/* 기업버튼 디자인 */
-/* .tab_menu ul .tab_btn .tab6_btn{
-    background:rgba(38, 120, 228)
-}
-.tab_menu ul .tab_btn .tab7_btn{
-    background:rgba(68, 138, 231)
-}
-.tab_menu ul .tab_btn .tab8_btn{
-    background:rgba(84, 146, 226)
-}
-.tab_menu ul .tab_btn .tab9_btn{
-    background:rgba(103, 153, 218)
-}
-.tab_menu ul .tab_btn .tab10_btn{
-    background:rgba(127, 166, 218)
-}
-.tab_menu ul .tab_btn .tab11_btn{
-    background:rgba(144, 173, 211)
-}
- */
-/* 모바일 및 포폴 디자인 */
-/* .tab_menu ul .tab_btn .tab12_btn{
-    background:rgba(230, 191, 66)
-}
-.tab_menu ul .tab_btn .tab13_btn{
-    background:rgba(228, 196, 93)
-}
-.tab_menu ul .tab_btn .tab14_btn{
-    background:rgba(233, 206, 116)
-}
-.tab_menu ul .tab_btn .tab15_btn{
-    background:rgba(235, 212, 137)
-}
-.tab_menu ul .tab_btn .tab16_btn{
-    background:rgba(235, 216, 156)
-} */
 
 
+/* 탭 클릭시 라벨 디자인 -----------------*/
 
-/* 탭 클릭시 라벨 디자인 */
+/* 첫 번째 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab1_btn, 
+.tab_menu ul .tab_btn input:checked + .tab6_btn, 
+.tab_menu ul .tab_btn input:checked + .tab12_btn{
+    background:rgba(108 128 177);
+} 
+
+/* 두 번째 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab2_btn, 
+.tab_menu ul .tab_btn input:checked + .tab7_btn, 
+.tab_menu ul .tab_btn input:checked + .tab13_btn{
+    background: rgba(122 139 179);
+} 
+
+/* 세 번째 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab3_btn, 
+.tab_menu ul .tab_btn input:checked + .tab8_btn, 
+.tab_menu ul .tab_btn input:checked + .tab14_btn{
+    background:rgba(134 147 177);
+} 
+
+/* 네 번째 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab4_btn, 
+.tab_menu ul .tab_btn input:checked + .tab9_btn, 
+.tab_menu ul .tab_btn input:checked + .tab15_btn{
+    background:rgba(147 156 179);
+} 
+
+/* 다섯 번째 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab5_btn, 
+.tab_menu ul .tab_btn input:checked + .tab10_btn, 
+.tab_menu ul .tab_btn input:checked + .tab16_btn{
+    background:rgba(158 165 183);
+} 
+
+/* 여섯 번째 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab11_btn{
+    background:rgba(169 174 185);
+} 
+
 .tab_menu ul .tab_btn input:checked + .tab_click{
 
 }
@@ -783,8 +944,8 @@ nav:hover i:after{
     font-size:1.5em;
 }
 .tab_menu ul .tab_btn .cont .inner2{
-    width: 22%;
-    padding: 1% 1% 0% 7%;
+    width: 29%;
+    padding: 1% 1% 0% 6%;
     margin: 0 auto;
     background: #fff;
     text-align: left;
@@ -803,8 +964,14 @@ nav:hover i:after{
     left: 50%;
     transform: translateX(-50%);
 }
-
-
+/* 모바일 이미지 */
+.tab_menu ul .tab_btn .cont .moblie{
+    display:none;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 /* 벚꽃줄기 이미지 */
@@ -1022,6 +1189,10 @@ nav:hover i:after{
 
 /* 웹사이트 이미지 */
 .tab_menu ul .tab_btn input:checked ~ .cont .safari{
+    display:block;
+}
+/* 모바일 이미지 */
+.tab_menu ul .tab_btn input:checked ~ .cont .moblie{
     display:block;
 }
 
@@ -1284,8 +1455,10 @@ nav:hover i:after{
     .tab_menu ul .tab_btn .cont .safari img{
         width:77%
     }
-
-
+    /* 모바일 이미지 */
+    .tab_menu ul .tab_btn .cont .moblie img{
+        width:77%
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -1422,6 +1595,12 @@ nav:hover i:after{
     }
 }
 
+@media screen and (max-width: 850px){
+    /* 탭메뉴 사파리 이미지 */
+    .tab_menu ul .tab_btn .cont .moblie img {
+        width: 69%;
+    }
+}
 @media screen and (max-width: 768px){
     /* 인트로 높이 */
     .intro {
@@ -1455,7 +1634,7 @@ nav:hover i:after{
     }
 
     /* 경력 탭메뉴 제목 폰트 */
-    .top_title h1 {
+    .top_title h2 {
         font-size: 1.5em;
     }
 
@@ -1470,6 +1649,14 @@ nav:hover i:after{
     /* 탭메뉴 모든 이미지 */
     .tab_menu ul .tab_btn .cont img {
         width: 70%;
+    }
+    /* 탭메뉴 모바일 이미지 */
+    .tab_menu ul .tab_btn .cont .safari img {
+        width: 76%;
+    }
+    /* 탭메뉴 모바일 이미지 */
+    .tab_menu ul .tab_btn .cont .moblie img {
+        width: 59%;
     }
     /* 탭메뉴 핑크색 꽃 포지션 */
     .tab_menu ul .tab_btn .cont .pink_flower2 {
@@ -1542,7 +1729,10 @@ nav:hover i:after{
     .tab_menu ul .tab_btn .cont img {
         width: 54%;
     }
-    
+    /* 탭메뉴 모바일 이미지 */
+    .tab_menu ul .tab_btn .cont .moblie img {
+        width: 50%;
+    }
     /* 탭메뉴 양쪽 나뭇잎 이미지 */
     .tab_menu ul .tab_btn .cont .grass1{
         left:-8%;
@@ -1553,6 +1743,12 @@ nav:hover i:after{
     /* 탭메뉴 보라색 꽃 */
     .tab_menu ul .tab_btn .cont .purple_flower {
         right: -7%;
+    }
+}
+@media screen and (max-width: 600px){
+    /* 탭메뉴 모바일 이미지 */
+    .tab_menu ul .tab_btn .cont .moblie img {
+        width: 44%;
     }
 }
 @media screen and (max-width: 500px){
@@ -1671,18 +1867,40 @@ nav:hover i:after{
 }
 
 
+@media screen and (max-width: 480px){
+    /* 인트로 양쪽 나뭇잎 */
+    .intro .grassOne .oR {
+        right: -131%;
+    }
+    .intro .grassOne .oL {
+        left: -130%;
+    }
+
+    /* 스킬 바 포지션 */
+    .skill .inner .title {
+        left: 8%;
+    }
+    .skill .inner .bar {
+        left: 51%;
+    }
+    /* 탭메뉴 모바일 이미지 */
+    .tab_menu ul .tab_btn .cont .moblie img {
+        width: 36%;
+    }
+}
+
 @media screen and (max-width: 400px){
     /* 인트로 타이틀 폰트 */
     .intro .inner .title {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     /* 인트로 왼쪽 나뭇잎 */
     .intro .grassOne .oL {
-        left: -156%;
+        left: -146%;
     }
     /* 인트로 오른쪽 나뭇잎 */
     .intro .grassOne .oR {
-        right: -155%;
+        right: -144%;
     }
 
     /* 인트로듀스 높이 */
@@ -1693,6 +1911,12 @@ nav:hover i:after{
     .introduce .inner .back {
         height: 979px;
     }
+    /* 인트로듀스 타이틀 */
+    .introduce .inner .bg .title {
+        font-size: 1.4em;
+    }
+
+
 
     /* 스킬 높이 */
     .skill {
@@ -1716,7 +1940,7 @@ nav:hover i:after{
 
 
     /* 탭메뉴 제목 */
-    .top_title h1 {
+    .top_title h2 {
         font-size: 1.1em;
     }
     /* 탭메뉴 라벨 */
@@ -1759,8 +1983,48 @@ nav:hover i:after{
 
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 390px){
+    /* 인트로 양쪽 나뭇잎 이미지 */
+    .intro .grassOne .oL {
+        left: -159%;
+    }
+    .intro .grassOne .oR {
+        right: -158%;
+    }
+}
+@media screen and (max-width: 375px){
+   /* 인트로 양쪽 나뭇잎 이미지 */
+   .intro .grassOne .oL {
+    left: -159%;
+    }
+    .intro .grassOne .oR {
+        right: -158%;
+    }
+}
+@media screen and (max-width: 365px){
+   /* 인트로 양쪽 나뭇잎 이미지 */
+   .intro .grassOne .oL {
+    left: -167%;
+    }
+    .intro .grassOne .oR {
+        right: -167%;
+    }
+}
 
+@media screen and (max-width: 350px){
+       /* 인트로 양쪽 나뭇잎 이미지 */
+   .intro .grassOne .oL {
+    left: -173%;
+    }
+    .intro .grassOne .oR {
+        right: -173%;
+    }
+
+
+    /* 탭메뉴 모바일 이미지 */
+    .tab_menu ul .tab_btn .cont .moblie img {
+        width: 32%;
+    }
     /* 탭메뉴 오른쪽 나비 이미지 */
     .tab_menu ul .tab_btn .cont .butterfly1 {
         left: -7%;
@@ -1782,7 +2046,17 @@ nav:hover i:after{
     }
 }
 
+@media screen and (max-width: 330px){
+    /* 인트로 양쪽 나뭇잎 이미지 */
+    .intro .grassOne .oL {
+    left: -179%;
+    }
+    .intro .grassOne .oR {
+        right: -183%;
+    }
 
+
+}
 
 
 
