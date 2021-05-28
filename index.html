@@ -6,22 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
 
     <!-- 애니메이트.css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     
     <!-- 제이쿼리 cdn -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <!-- AOS.js cdn -->
+    <!-- AOS.js(스크롤효과) cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <script src="js/main.js"></script>
+    <!-- 슬릭슬라이더 cdn -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+    <!-- bx슬라이더 -->
+    <!-- <script src="js/jquery.bxslider.js"></script> -->
+
+    <!-- 라이트박스 -->
+    <script src="js/lightbox.js"></script> 
+
 </head>
 <body> 
 
-<div class="mouse"><img src="img/cursor.png"></div>
+    <!-- 마우스 커서 -->
+<!-- <div class="mouse"><img src="img/cursor.png"></div> -->
 
 <div class="pager top"></div><!--.pager.top-->
 <header id="header">
@@ -84,7 +95,6 @@
                                 </div>
                                 <p class="name">이다영 / Diane Lee</p><!--.name-->
                                 <p class="age">1995.06.15 27세</p><!--.age-->
-                                <p class="address">부산 진구 범천1동</p><!--.address-->
                                 <p class="email">lo7733ve@naver.com</p><!--.email-->
                                 <p class="phone">01029387732</p><!--.phone-->
                             </div><!--.left-->
@@ -146,10 +156,13 @@
                 </div><!--.inner-->
             </section><!--.introduce-->
             <section class="skill_list">
-                <h2>My skill fruits</h2>
+                <h2>
+                    MY SKILL FRUITS
+                    <span>배경</span>
+                </h2>
                 <div class="inner">
                     <ul class="clearfix">
-                        <li class="fruit1">
+                        <li class="card fruit1">
                             <div class="icon"
                             data-aos="zoom-in"
                             data-aos-offset=""
@@ -157,142 +170,184 @@
                             data-aos-duration="1000"
                             data-aos-once="false"
                             >
-                                <img src="img/fruit1.png" alt="php">
+                                <img src="img/skill/apple1.png" alt="php">
                             </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back1.png" alt="">
+                            </div><!-- a_back -->
                         </li>
-                        <li class="fruit2">
+                        <li class="card fruit2">
                             <div class="icon"
                             data-aos="zoom-in"
                             data-aos-offset=""
-                            data-aos-delay="1000"
-                            data-aos-duration="1000"
-                            data-aos-once="false">
-                                <img src="img/fruit2.png" alt="제이쿼리">
-                            </div><!-- icon -->
-                        </li>
-                        <li class="fruit3">
-                            <div class="icon"
-                            data-aos="zoom-in"
-                            data-aos-offset="-100"
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
-                            data-aos-once="false">
-                                <img src="img/fruit3.png" alt="html5">
-                            </div><!-- icon -->
-                        </li>
-                        <li class="fruit4">
-                            <div class="icon"
-                            data-aos="zoom-in"
-                            data-aos-offset="-100"
-                            data-aos-delay="700"
-                            data-aos-duration="1000"
-                            data-aos-once="false">
-                                <img src="img/fruit4.png" alt="css3">
-                            </div><!-- icon -->
-                        </li>
-                        <li class="fruit5">
-                            <div class="icon"
-                            data-aos="zoom-in"
-                            data-aos-offset="-100"
-                            data-aos-delay="1100"
-                            data-aos-duration="1000"
-                            data-aos-once="false">
-                                <img src="img/fruit5.png" alt="자바스크립트">
-                            </div><!-- icon -->
-                        </li>
-                        <li class="fruit6">
-                            <div class="icon"
-                            data-aos="zoom-in"
-                            data-aos-offset="-100"
                             data-aos-delay="200"
                             data-aos-duration="1000"
                             data-aos-once="false">
-                                <img src="img/fruit6.png" alt="그누보드5">
+                                <img src="img/skill/apple2.png" alt="제이쿼리">
                             </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back2.png" alt="">
+                            </div><!-- a_back -->
                         </li>
-                        <li class="fruit7">
+                        <li class="card fruit3">
                             <div class="icon"
                             data-aos="zoom-in"
-                            data-aos-offset="-200"
-                            data-aos-delay="600"
-                            data-aos-duration="1000"
-                            data-aos-once="false">
-                                <img src="img/fruit7.png" alt="에디트플러스">
-                            </div><!-- icon -->
-                        </li>
-                        <li class="fruit8">
-                            <div class="icon"
-                            data-aos="zoom-in"
-                            data-aos-offset="-200"
+                            data-aos-offset="-100"
                             data-aos-delay="400"
                             data-aos-duration="1000"
                             data-aos-once="false">
-                                <img src="img/fruit8.png" alt="브라켓">
+                                <img src="img/skill/apple3.png" alt="html5">
                             </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back3.png" alt="">
+                            </div><!-- a_back -->
                         </li>
-                        <li class="fruit9">
+                        <li class="card fruit4">
                             <div class="icon"
                             data-aos="zoom-in"
-                            data-aos-offset="-300"
-                            data-aos-delay="1200"
+                            data-aos-offset="-100"
+                            data-aos-delay="600"
                             data-aos-duration="1000"
                             data-aos-once="false">
-                                <img src="img/fruit9.png" alt="비주얼스튜디오">
+                                <img src="img/skill/apple4.png" alt="css3">
                             </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back4.png" alt="">
+                            </div><!-- a_back -->
                         </li>
-                        <li class="fruit10">
+                        <li class="card fruit5">
                             <div class="icon"
                             data-aos="zoom-in"
-                            data-aos-offset="-300"
-                            data-aos-delay="900"
+                            data-aos-offset="-100"
+                            data-aos-delay="400"
                             data-aos-duration="1000"
                             data-aos-once="false">
-                                <img src="img/fruit10.png" alt="깃허브">
+                                <img src="img/skill/apple5.png" alt="자바스크립트">
                             </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back5.png" alt="">
+                            </div><!-- a_back -->
                         </li>
-                        <li class="fruit11">
+                        <li class="card fruit6">
                             <div class="icon"
                             data-aos="zoom-in"
-                            data-aos-offset="-300"
-                            data-aos-delay="1300"
-                            data-aos-duration="1000"
-                            data-aos-once="false">
-                                <img src="img/fruit11.png" alt="포토샵">
-                            </div><!-- icon -->
-                        </li>
-                        <li class="fruit12">
-                            <div class="icon"
-                            data-aos="zoom-in"
-                            data-aos-offset="-300"
-                            data-aos-delay="800"
-                            data-aos-duration="1000"
-                            data-aos-once="false">
-                                <img src="img/fruit12.png" alt="일러스트">
-                            </div><!-- icon -->
-                        </li>
-                        <li class="fruit13">
-                            <div class="icon"
-                            data-aos="zoom-in"
-                            data-aos-offset="-300"
+                            data-aos-offset="-100"
                             data-aos-delay="100"
                             data-aos-duration="1000"
                             data-aos-once="false">
-                                <img src="img/fruit13.png" alt="라이트룸">
+                                <img src="img/skill/apple6.png" alt="그누보드5">
                             </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back6.png" alt="">
+                            </div><!-- a_back -->
                         </li>
-                        <li class="fruit14">
+                        <li class="card fruit7">
+                            <div class="icon"
+                            data-aos="zoom-in"
+                            data-aos-offset="-200"
+                            data-aos-delay="700"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <img src="img/skill/apple7.png" alt="에디트플러스">
+                            </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back7.png" alt="">
+                            </div><!-- a_back -->
+                        </li>
+                        <li class="card fruit8">
+                            <div class="icon"
+                            data-aos="zoom-in"
+                            data-aos-offset="-200"
+                            data-aos-delay="300"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <img src="img/skill/apple8.png" alt="브라켓">
+                            </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back8.png" alt="">
+                            </div><!-- a_back -->
+                        </li>
+                        <li class="card fruit9">
                             <div class="icon"
                             data-aos="zoom-in"
                             data-aos-offset="-300"
-                            data-aos-delay="1400"
+                            data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-once="false">
-                                <img src="img/fruit14.png" alt="아이무비">
+                                <img src="img/skill/apple9.png" alt="비주얼스튜디오">
                             </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back9.png" alt="">
+                            </div><!-- a_back -->
+                        </li>
+                        <li class="card fruit10">
+                            <div class="icon"
+                            data-aos="zoom-in"
+                            data-aos-offset="-300"
+                            data-aos-delay="600"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <img src="img/skill/apple10.png" alt="깃허브">
+                            </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back10.png" alt="">
+                            </div><!-- a_back -->
+                        </li>
+                        <li class="card fruit11">
+                            <div class="icon"
+                            data-aos="zoom-in"
+                            data-aos-offset="-300"
+                            data-aos-delay="300"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <img src="img/skill/apple11.png" alt="포토샵">
+                            </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back11.png" alt="">
+                            </div><!-- a_back -->
+                        </li>
+                        <li class="card fruit12">
+                            <div class="icon"
+                            data-aos="zoom-in"
+                            data-aos-offset="-300"
+                            data-aos-delay="700"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <img src="img/skill/apple12.png" alt="일러스트">
+                            </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back12.png" alt="">
+                            </div><!-- a_back -->
+                        </li>
+                        <li class="card fruit13">
+                            <div class="icon"
+                            data-aos="zoom-in"
+                            data-aos-offset="-300"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <img src="img/skill/apple13.png" alt="라이트룸">
+                            </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back13.png" alt="">
+                            </div><!-- a_back -->
+                        </li>
+                        <li class="card fruit14">
+                            <div class="icon"
+                            data-aos="zoom-in"
+                            data-aos-offset="-300"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <img src="img/skill/apple14.png" alt="아이무비">
+                            </div><!-- icon -->
+                            <div class="a_back">
+                                <img src="img/skill/a_back14.png" alt="">
+                            </div><!-- a_back -->
                         </li>
                     </ul>
                     <div class="big_tree">
-                        <img src="img/big_tree.png" alt="나무">
+                        <img src="img/skill/big_tree.png" alt="나무">
                     </div><!-- big_tree -->
                 </div>
             </section><!-- skill_list -->
@@ -301,7 +356,7 @@
             <section class="work_list">
                 <div class="inner">
                     <div class="top_title" id="wow_close">
-                        <h2>My work web site</h2>
+                        <h2>Click My work web site</h2>
                     </div><!--top_title-->
             
                     <div class="tab_menu">
@@ -335,7 +390,7 @@
                                         <img src="img/web/web2.jpg" alt="">
                                     </div><!--safari-->
                                     <p class="go_now">
-                                        <a href="#" target="_blank">스카이 펜션 바로가기</a>
+                                        <a href="http://pension-sky.com/" target="_blank">스카이 펜션 바로가기</a>
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업 (반응형)</span>
@@ -360,7 +415,7 @@
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업 (반응형)</span>
-                                        <span>기여도 : 100% 퍼블리싱</span>
+                                        <span>기여도 : 60% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -408,7 +463,7 @@
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업</span>
-                                        <span>기여도 : 100% 퍼블리싱</span>
+                                        <span>기여도 : 80% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -431,7 +486,7 @@
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업</span>
-                                        <span>기여도 : 100% 퍼블리싱</span>
+                                        <span>기여도 : 90% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -452,7 +507,7 @@
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업</span>
-                                        <span>기여도 : 100% 퍼블리싱</span>
+                                        <span>기여도 : 90% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -473,7 +528,7 @@
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업</span>
-                                        <span>기여도 : 100% 퍼블리싱</span>
+                                        <span>기여도 : 80% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -497,7 +552,7 @@
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업</span>
-                                        <span>기여도 : 하단 게시판 제외 나머지 퍼블리싱</span>
+                                        <span>기여도 : 30% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -521,7 +576,7 @@
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업</span>
-                                        <span>기여도 : 100% 퍼블리싱</span>
+                                        <span>기여도 : 90% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -538,11 +593,11 @@
                                         <img src="img/web/web11.jpg" alt="">
                                     </div><!--safari-->
                                     <p class="go_now">
-                                        <a href="예은디자인.com" target="_blank">예은디자인 바로가기</a>
+                                        <a href="http://xn--oy2b15swjag4dpxvm6b1q.kr/" target="_blank">예은디자인 바로가기</a>
                                     </p><!--go_now-->
                                     <div class="inner2">
                                         <span>부분 : 메인 작업</span>
-                                        <span>기여도 : 100% 퍼블리싱</span>
+                                        <span>기여도 : 30% 퍼블리싱</span>
                                         <span>스킬 : php, css, jquery 사용</span>
                                         <span>에디터 : editplus</span>
                                     </div><!--inner-->
@@ -670,44 +725,317 @@
             </section><!--work-->
 
 
-            <section>
-                <div class="height"></div>
+            <section class="etc">
+                <div class="inner">
+                    <div class="etc_scroll">
+                        <p>
+                            PALY SCROLL
+                        </p>
+                        <p>
+                            <img src="img/scroll_down.png" alt="마우스 스크롤">
+                        </p>
+                    </div>
+                    <ul class="etc_slider">
+                        <li class="bn1"
+                        data-aos="fade-down"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/song5.jpg" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                            <!-- 사진들 붙여서 보여줄거면 data-lightbox 이름 바꾸면 됨 -->
+                                <img src="img/etc/song0.png" alt="펜션송 포토 레이어">
+                            </a>
+                            <a href="img/etc/song1.jpg" class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                            <a href="img/etc/song2.jpg" class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                            <a href="img/etc/song3.jpg"class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                            <a href="img/etc/song4.jpg" class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                            <a href="img/etc/song6.jpg" class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                            <a href="img/etc/song7.jpg" class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                            <a href="img/etc/song8.jpg" class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                            <a href="img/etc/song9.jpg" class="song" data-lightbox="image-1" data-title="펜션송 포토 레이어">
+                                펜션송
+                            </a>
+                        </li>
+                        <li class="bn2"
+                        data-aos="fade-up-left"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/the5.jpg" data-lightbox="image-2" data-title="더사니몰 배너">
+                                <img src="img/etc/the0.png" alt="더사니몰 배너">
+                            </a>
+                            <a href="img/etc/the1.jpg" data-lightbox="image-2" data-title="더사니몰 메인배너">
+                                더사니 몰
+                            </a>
+                            <a href="img/etc/the2.jpg" data-lightbox="image-2" data-title="더사니몰 메인배너">
+                                더사니 몰
+                            </a>
+                            <a href="img/etc/the3.jpg" data-lightbox="image-2" data-title="더사니몰 메인배너">
+                                더사니 몰
+                            </a>
+                            <a href="img/etc/the4.jpg" data-lightbox="image-2" data-title="더사니몰 메인배너">
+                                더사니 몰
+                            </a>
+                            <a href="img/etc/the6.jpg" data-lightbox="image-2" data-title="더사니몰 메인배너">
+                                더사니 몰
+                            </a>
+                            <a href="img/etc/the7.jpg" data-lightbox="image-2" data-title="더사니몰 띠 배너">
+                                더사니 몰
+                            </a>
+                            <a href="img/etc/the9.jpg" data-lightbox="image-2" data-title="더사니몰 설날 팝업창">
+                                더사니 몰
+                            </a>
+                            <a href="img/etc/the8.jpg" data-lightbox="image-2" data-title="더사니몰 배너">
+                                더사니 몰
+                            </a>
+                        </li>
+                        
+                        <li class="bn3"
+                        data-aos="fade-down"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/pop1.jpg" data-lightbox="image-3" data-title="환경문화스포츠협회 팝업창">
+                                <img src="img/etc/pop0.png" alt="환경문화스포츠협회 팝업창">
+                            </a>
+                            <a href="img/etc/pop2.jpg" data-lightbox="image-3" data-title="배내펜션 코로나 팝업창">
+                                배내펜션 코로나 팝업창
+                            </a>
+                            
+                            <a href="img/etc/pop3.jpg" data-lightbox="image-3" data-title="은빛 요양원 팝업창">
+                                은빛 요양원 팝업창
+                            </a>
+                            
+                            <a href="img/etc/pop4.jpg" data-lightbox="image-3" data-title="펜션 코로나 팝업창">
+                                펜션 코로나 팝업창
+                            </a>
+                            
+                            <a href="img/etc/pop5.jpg" data-lightbox="image-3" data-title="웨이스 코리아 배너">
+                                웨이스 코리아 배너
+                            </a>
+                            
+                            <a href="img/etc/pop6.jpg" data-lightbox="image-3" data-title="펜션 코로나 팝업창">
+                                펜션 코로나 팝업창
+                            </a>
+                            
+                            <a href="img/etc/pop7.jpg" data-lightbox="image-3" data-title="펜션 물놀이 팝업창">
+                                펜션 물놀이 팝업창
+                            </a>
+                        </li>
+                        
+                        <li class="bn4"
+                        data-aos="fade-up-right"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/dog1.jpg" data-lightbox="image-4" data-title="펫밀리 배송안내">
+                                <img src="img/etc/dog0.png" alt="">
+                            </a>
+                            <a href="img/etc/dog2.jpg" data-lightbox="image-4" data-title="펫밀리 로고">
+                                펫밀리 로고
+                            </a>
+                        </li>
+                        
+                        <li class="bn5"
+                        data-aos="fade-down"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/songwol1.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                <img src="img/etc/songwol0.png" alt="송월타월 배너">
+                            </a>
+                            <a href="img/etc/songwol2.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                송월타월 배너
+                            </a>
+                            <a href="img/etc/songwol3.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                송월타월 배너
+                            </a>
+                            <a href="img/etc/songwol4.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                송월타월 배너
+                            </a>
+                            <a href="img/etc/songwol5.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                송월타월 배너
+                            </a>
+                            <a href="img/etc/songwol6.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                송월타월 배너
+                            </a>
+                            <a href="img/etc/songwol7.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                송월타월 배너
+                            </a>
+                            <a href="img/etc/songwol8.jpg" data-lightbox="image-5" data-title="송월타월 배너">
+                                송월타월 배너
+                            </a>
+                        </li>
+                        
+                        <li class="bn6"
+                        data-aos="fade-up-left"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/re1.jpg" data-lightbox="image-6" data-title="빕스 리뷰 이벤트 배너">
+                                <img src="img/etc/re0.png" alt="">
+                            </a>
+                            <a href="img/etc/re2.jpg" data-lightbox="image-6" data-title="빕스 리뷰 이벤트 배너">
+                                빕스 리뷰 이벤트 배너
+                            </a>
+                            <a href="img/etc/rul1.jpg" data-lightbox="image-6" data-title="씨그램 룰렛이벤트">
+                                씨그램 룰렛이벤트
+                            </a>
+                            <a href="img/etc/beauty1.jpg" data-lightbox="image-6" data-title="3ce 골라담기 이벤트">
+                                3ce 골라담기 이벤트
+                            </a>
+                        </li>
+                        
+                        <li class="bn8"
+                        data-aos="fade-down"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/news1.jpg" data-lightbox="image-8" data-title="카드뉴스">
+                                <img src="img/etc/news0.png" alt="카드뉴스">
+                            </a>
+                            <a href="img/etc/news2.jpg" data-lightbox="image-8" data-title="카드뉴스">
+                                카드뉴스
+                            </a>
+                            <a href="img/etc/news3.jpg" data-lightbox="image-8" data-title="카드뉴스">
+                                카드뉴스
+                            </a>
+                            <a href="img/etc/news4.jpg" data-lightbox="image-8" data-title="카드뉴스">
+                                카드뉴스
+                            </a>
+                            <a href="img/etc/news5.jpg" data-lightbox="image-8" data-title="카드뉴스">
+                                카드뉴스
+                            </a>
+                            <a href="img/etc/news6.jpg" data-lightbox="image-8" data-title="카드뉴스">
+                                카드뉴스
+                            </a>
+                        </li>
+                        
+                        <li class="bn9"
+                        data-aos="fade-up-right"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/duk1.jpg" data-lightbox="image-9" data-title="덕원환경 조직도">
+                                <img src="img/etc/duk0.png" alt="덕원환경 조직도">
+                            </a>
+                            <a href="img/etc/duk2.jpg" data-lightbox="image-9" data-title="덕원환경 회사연혁">
+                                덕원환경 회사연혁
+                            </a>
+                            <a href="img/etc/duk3.jpg" data-lightbox="image-9" data-title="덕원환경 인사말">
+                                덕원환경 인사말
+                            </a>
+                            <a href="img/etc/duk4.jpg" data-lightbox="image-9" data-title="덕원환경 서브페이지">
+                                덕원환경 서브페이지
+                            </a>
+                            <a href="img/etc/duk5.jpg" data-lightbox="image-9" data-title="덕원환경 서브페이지">
+                                덕원환경 서브페이지
+                            </a>
+                        </li>
+                        <li class="bn10"
+                        data-aos="fade-down"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/view1.jpg" data-lightbox="image-10" data-title="담다 상세페이지">
+                                <img src="img/etc/view0.png" alt="담다 상세페이지">
+                            </a>
+                            <a href="img/etc/view1.jpg" data-lightbox="image-10" data-title="영진공구 상세페이지">
+                            </a>
+                            <a href="img/etc/view.jpg" data-lightbox="image-10" data-title="더사니몰 상세페이지">
+                            </a>
+                            <a href="img/etc/travel0.jpg" data-lightbox="image-10" data-title="모두투어 상세페이지">
+                            </a>
+                            <a href="img/etc/view.jpg" data-lightbox="image-10" data-title="가온갈비탕 상세페이지">
+                            </a>
+                        </li>
+                        
+                        <li class="bn11"
+                        data-aos="fade-up-right"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false"
+                        >
+                            <a href="img/etc/icon1.jpg" data-lightbox="image-11" data-title="아이콘 만들기">
+                                <img src="img/etc/icon0.png" alt="아이콘 만들기">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="etc_text_slider">
+                        <li>
+                            <span>PensionSong</span>
+                            <span>펜션송</span>
+                        </li>
+                        <li>
+                            <span>Thesani Mall</span>
+                            <span>더사니 몰</span>
+                        </li>
+                        <li>
+                            <span>Popup</span>
+                            <span>팝업창</span>
+                        </li>
+                        <li>
+                            <span>Petmily</span>
+                            <span>펫밀리</span>
+                        </li>
+                        <li>
+                            <span>Songwol</span>
+                            <span>송월타월</span>
+                        </li>
+                        <li>
+                            <span>Banner</span>
+                            <span>배너</span>
+                        </li>
+                        <li>
+                            <span>Card News</span>
+                            <span>카드뉴스</span>
+                        </li>
+                        <li>
+                            <span>Duckwon</span>
+                            <span>덕원환경산업기술</span>
+                        </li>
+                        <li>
+                            <span>Detail Page</span>
+                            <span>상세페이지</span>
+                        </li>
+                        <li>
+                            <span>Icon</span>
+                            <span>아이콘</span>
+                        </li>
+                    </ul><!-- etc_text_slider -->
+                </div>
             </section>
 </div><!--#container-->
          
 <!-- AOS.js 시작 명령 -->
 <script>
-    AOS.init(
-
-    );
+    AOS.init();
 </script>    
-    <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
-    <script>
-
-    
-      // --------클릭시 반짝이 모션
-      var first = new mojs.Shape({
-          shape:'circle', //동그라미
-          left:0, top:0, //위치
-          radius:{0:40}, //안쪽 동그라미 크기
-          fill:'none', //동그라미 색상
-          stroke:'#fafafa', //바깥 선 컬러
-          strokeWidth:{45:0}, //바깥 동그라미 선 굵기
-      });
-      var second = new mojs.Shape({
-          shape:'circle',
-          parent:first.el,
-          radius:{0:50},
-          stroke:'#2d0',
-          strokeWidth:{20:0}
-      });
-      document.addEventListener('click', function(e){
-          first.tune({x:e.pageX, y:e.pageY}).replay();
-      })
-
-
-
-    </script>
+<script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 
