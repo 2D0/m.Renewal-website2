@@ -65,9 +65,11 @@ $('.etc_slider').slick({
   autoplay: true,
   pauseOnHover:false,
   autoplaySpeed: 3000,
+  
+  //반응형 옵션
   responsive: [
     {
-      breakpoint: 480,
+      breakpoint: 500, //화면사이즈
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -101,22 +103,245 @@ $('.etc_text_slider').slick({
   speed: 300,
   arrows: false,
   asNavFor: '.etc_slider',
+
+
 });
 
 
-/* 사과 뒤집기-------------- */
+/* 사과 뒤집기 스크립트-------------- */
 
-/* $('.card').on('click',function(){
-  $('.card_rorate').addClass('back_rotate').removeClass('card_rotate');
-  $(this).addClass('card_rotate').removeClass('back_rotate');
-});
+let fruit1 = document.querySelector('.fruit1');
+  fruit1.addEventListener('click',click);
 
- */
+    function click(event){
+      let elem = event.currentTarget;
+      if (elem.style.transform ==
+        'rotateY(180deg)'){
+                  elem.style.transform =
+                  'rotateY(0deg)';
+        } else {
+          elem.style.transform =
+          'rotateY(180deg)'
+        }
+    }
+
+ 
+    
+let fruit2 = document.querySelector('.fruit2');
+fruit2.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+    
+let fruit3 = document.querySelector('.fruit3');
+fruit3.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+    
+let fruit4 = document.querySelector('.fruit4');
+fruit4.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
 
 
+    
+let fruit5 = document.querySelector('.fruit5');
+fruit5.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
 
 
+    
+let fruit6 = document.querySelector('.fruit6');
+fruit6.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
 
 
+    
+let fruit7 = document.querySelector('.fruit7');
+fruit7.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+
+    
+let fruit8 = document.querySelector('.fruit8');
+fruit8.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+
+    
+let fruit9 = document.querySelector('.fruit9');
+fruit9.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+
+    
+let fruit10 = document.querySelector('.fruit10');
+fruit10.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+
+    
+let fruit11 = document.querySelector('.fruit11');
+fruit11.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+
+    
+let fruit12 = document.querySelector('.fruit12');
+fruit12.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+
+    
+let fruit13 = document.querySelector('.fruit13');
+fruit13.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
+
+
+    
+let fruit14 = document.querySelector('.fruit14');
+fruit14.addEventListener('click',click);
+
+function click(event){
+  let elem = event.currentTarget;
+  if (elem.style.transform ==
+    'rotateY(180deg)'){
+              elem.style.transform =
+              'rotateY(0deg)';
+    } else {
+      elem.style.transform =
+      'rotateY(180deg)'
+    }
+}
 
 
