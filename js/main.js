@@ -69,7 +69,7 @@ $('.etc_slider').slick({
   //반응형 옵션
   responsive: [
     {
-      breakpoint: 500, //화면사이즈
+      breakpoint: 500,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

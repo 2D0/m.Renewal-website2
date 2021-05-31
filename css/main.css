@@ -6,7 +6,8 @@ body{
     overflow-x:hidden;
     /* cursor:none;  */
     /* background: #d7decd; */
-    background: #dce2d3;
+    /* background: #dce2d3; */
+    background:url('../img/back_green.jpg') repeat;
 }
 
 /* 마우스 이미지 */
@@ -28,7 +29,8 @@ body{
     height:150px;
     /* background:#fff; */
     /* background: #d7decd; */
-    background: #dce2d3;
+    /* background: #dce2d3; */
+    background:url('../img/back_green.jpg') repeat;
     position:absolute;
     top:0;
     left:0;
@@ -139,7 +141,7 @@ nav:hover i:after{
     width:100%;
     height:100%;
 }
-#container section .inner{
+#container article .inner{
     width: 1100px;
     margin: 0 auto 0;
     /* position: absolute; */
@@ -434,7 +436,7 @@ nav:hover i:after{
 .skill_list h2 p:first-child{
     font-size:3.5em;
     font-weight:bold;
-    color:#5d8e57;
+    color:#6b7a57;
     text-align:center;
     position:relative;
 }
@@ -625,7 +627,7 @@ nav:hover i:after{
 .work_list h2{
     font-size:2em;
     text-align:center;
-    background:rgba(84 113 83);
+    background:#547153;
     color:#fff;
     padding:3% 0;
 
@@ -636,7 +638,8 @@ nav:hover i:after{
 }
 .tab_menu ul{}
 .tab_menu ul li{
-    background:#dce2d3;
+    /* background:#dce2d3; */
+    background:url('../img/back_green.jpg') repeat;
 }
 .tab_menu ul .tab_btn{
     width:100%;
@@ -659,68 +662,68 @@ nav:hover i:after{
 .tab_menu ul .tab_btn .tab1_btn, 
 .tab_menu ul .tab_btn .tab6_btn, 
 .tab_menu ul .tab_btn .tab12_btn{
-    background:rgba(97 136 94)
+    background:#61885e;
 }
 .tab_menu ul .tab_btn:hover .tab1_btn,
 .tab_menu ul .tab_btn:hover .tab6_btn,
 .tab_menu ul .tab_btn:hover .tab12_btn{
-    background:rgba(108 128 177);
+    background:#8e9a5d;
 }
 
 /* 두 번째 라벨 */
 .tab_menu ul .tab_btn .tab2_btn,
 .tab_menu ul .tab_btn .tab7_btn,
 .tab_menu ul .tab_btn .tab13_btn{
-    background:rgba(121 167 119)
+    background:#79a777;
 }
 .tab_menu ul .tab_btn:hover .tab2_btn,
 .tab_menu ul .tab_btn:hover .tab7_btn,
 .tab_menu ul .tab_btn:hover .tab13_btn{
-    background: rgba(122 139 179);
+    background: #9ba76d;
 }
 
 /* 세 번째 라벨 */
 .tab_menu ul .tab_btn .tab3_btn, 
 .tab_menu ul .tab_btn .tab8_btn, 
 .tab_menu ul .tab_btn .tab14_btn{
-    background:rgba(135 179 134)
+    background:#87b386;
 }
 .tab_menu ul .tab_btn:hover .tab3_btn, 
 .tab_menu ul .tab_btn:hover .tab8_btn, 
 .tab_menu ul .tab_btn:hover .tab14_btn{
-    background:rgba(134 147 177);
+    background:#a4af7c;
 }
 
 /* 네 번째 라벨 */
 .tab_menu ul .tab_btn .tab4_btn, 
 .tab_menu ul .tab_btn .tab9_btn, 
 .tab_menu ul .tab_btn .tab15_btn{
-    background:rgba(148 191 147);
+    background:#94bf93;
 }
 .tab_menu ul .tab_btn:hover  .tab4_btn, 
 .tab_menu ul .tab_btn:hover  .tab9_btn, 
 .tab_menu ul .tab_btn:hover  .tab15_btn{
-    background:rgba(147 156 179);
+    background:#a7af89;
 }
 
 /* 다섯 번째 라벨 */
 .tab_menu ul .tab_btn .tab5_btn, 
 .tab_menu ul .tab_btn .tab10_btn, 
 .tab_menu ul .tab_btn .tab16_btn{
-    background:rgba(155 183 153);
+    background:#9bb799;
 }
 .tab_menu ul .tab_btn:hover .tab5_btn, 
 .tab_menu ul .tab_btn:hover .tab10_btn, 
 .tab_menu ul .tab_btn:hover .tab16_btn{
-    background:rgba(158 165 183);
+    background:#abb194;
 }
 
 /* 여섯 번째 라벨 */
 .tab_menu ul .tab_btn .tab11_btn{
-    background:rgba(170 195 168);
+    background:#aac3a8;
 }
 .tab_menu ul .tab_btn:hover .tab11_btn{
-    background:rgba(169 174 185);
+    background:#b4b9a2;
 }
 
 
@@ -730,40 +733,40 @@ nav:hover i:after{
 .tab_menu ul .tab_btn input:checked + .tab1_btn, 
 .tab_menu ul .tab_btn input:checked + .tab6_btn, 
 .tab_menu ul .tab_btn input:checked + .tab12_btn{
-    background:rgba(142 154 93);
+    background:#8e9a5d;
 } 
 
 /* 두 번째 라벨 디자인 */
 .tab_menu ul .tab_btn input:checked + .tab2_btn, 
 .tab_menu ul .tab_btn input:checked + .tab7_btn, 
 .tab_menu ul .tab_btn input:checked + .tab13_btn{
-    background: rgba(155 167 109);
+    background: #9ba76d;
 } 
 
 /* 세 번째 라벨 디자인 */
 .tab_menu ul .tab_btn input:checked + .tab3_btn, 
 .tab_menu ul .tab_btn input:checked + .tab8_btn, 
 .tab_menu ul .tab_btn input:checked + .tab14_btn{
-    background:rgba(164 175 124);
+    background:#a4af7c;
 } 
 
 /* 네 번째 라벨 디자인 */
 .tab_menu ul .tab_btn input:checked + .tab4_btn, 
 .tab_menu ul .tab_btn input:checked + .tab9_btn, 
 .tab_menu ul .tab_btn input:checked + .tab15_btn{
-    background:rgb(167 175 137);
+    background:#a7af89;
 } 
 
 /* 다섯 번째 라벨 디자인 */
 .tab_menu ul .tab_btn input:checked + .tab5_btn, 
 .tab_menu ul .tab_btn input:checked + .tab10_btn, 
 .tab_menu ul .tab_btn input:checked + .tab16_btn{
-    background:rgba(171 177 148);
+    background:#abb194;
 } 
 
 /* 여섯 번째 라벨 디자인 */
 .tab_menu ul .tab_btn input:checked + .tab11_btn{
-    background:rgba(180 185 162);
+    background:#b4b9a2;
 } 
 
 .tab_menu ul .tab_btn input:checked + .tab_click{
@@ -775,7 +778,8 @@ nav:hover i:after{
 .tab_menu ul .tab_btn .cont{
     height:0;
     /* padding:1% 0; */
-    background:#dce2d3;
+    /* background:#dce2d3; */
+    background:url('../img/back_green.jpg') repeat;
 }
 .tab_menu ul .tab_btn .cont .go_now{
     width:40%;
@@ -828,7 +832,8 @@ nav:hover i:after{
     width: 29%;
     padding: 1% 1% 0% 6%;
     margin: 0 auto;
-    background: #dce2d3;
+    /* background: #dce2d3; */
+    background:url('../img/back_green.jpg') repeat;
     text-align: left;
 }
 .tab_menu ul .tab_btn .cont .inner2 span{
@@ -1160,8 +1165,7 @@ nav:hover i:after{
 
 /* etc 디자인 -----------------------*/
 .etc{
-    margin-top:10%;
-    height:100%;
+    margin:10% 0 12%;
 }
 .etc .inner{
     max-width:1100px;
@@ -1219,7 +1223,8 @@ nav:hover i:after{
 }
 .etc .etc_slider li{
     margin:0 5px;
-    text-indent:-9999px;
+    float:left;
+    /* text-indent:-9999px; */
 }
 .etc .etc_slider li a{
     font-size:0;
@@ -1245,6 +1250,34 @@ nav:hover i:after{
     font-weight: bold;
     color: #323524;
 }
+
+
+/* 감사 인사 -----------------------*/
+
+.thx{
+    height:100%;
+}
+.thx .inner{
+    max-width:1100px;
+    width:100%;
+}
+.thx ul{}
+.thx ul li{
+    width:50%;
+    float:left;
+}
+.thx .memo{}
+.thx .bottom_write{}
+.thx .bottom_write .title{
+    font-size: 1.8em;
+    margin-bottom: 4%;
+}
+.thx .bottom_write .cont_write{
+    font-size:1.2em;
+}
+
+
+
 
 
 /* --------------------------미디어쿼리---------------------------- */
@@ -1348,7 +1381,7 @@ nav:hover i:after{
         width:100%;
     }
     /* 컨테이너 이너 너비 */
-    #container section .inner{
+    #container article .inner{
         width:100%;
     }
     /* 인트로듀스 높이 */
@@ -1401,7 +1434,7 @@ nav:hover i:after{
     }
 
 
-    #container section .tab_menu {
+    #container article .tab_menu {
         width: 100%;
     }
 }
