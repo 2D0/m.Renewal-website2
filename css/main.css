@@ -1,6 +1,6 @@
 @charset "utf-8";
 html, body{
-    height:100%;
+    /* height:100%; */
 }
 body{
     overflow-x:hidden;
@@ -22,6 +22,39 @@ body{
 
 
 
+/* 위로가기 버튼 디자인 */
+
+.closer_btn{    
+    position:fixed;
+    bottom:10%;
+    right:5%;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:rgb(112, 148, 105);
+    color:#fff;
+    cursor:pointer;
+    z-index: 5;
+}
+.closer_btn p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.closer_btn span{
+    display:block;
+    width:25px;
+    height:1px;
+    background:#fff;
+    text-indent:-9999px;
+}
+
+.closer_btn:hover p{
+    transform:translate(-50%, -50%) rotate(360deg);
+    transition:all .5s;
+}
+
 
 /* 헤더 영역  ----------------------------------------- */
 #header{
@@ -34,14 +67,13 @@ body{
     position:absolute;
     top:0;
     left:0;
-    z-index:-1;
 }
 #headerIn{
 }
 .logo{
     position:absolute;
     top:50%;
-    left:98px;
+    left:5%;
     transform:translateY(-50%);
 }
 .logo a{
@@ -81,37 +113,33 @@ body{
 
 /* 햄버거 메뉴 */
 
-nav{
+.gnbMenu{
     width:48px;
     position:absolute;
     top:50%;
     right:98px;
     transform:translateY(-50%);
     cursor:pointer;
+    z-index:3;
 }
 
-i{
+.gnbMenu i{
     display:block;
-    height:5px;
+    height:3px;
     background:#6b7a57;
     margin-top:10px;
     position:relative;
     border-radius:10px;
-/*
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);*/
 }
-i:first-child{
+.gnbMenu i:first-child{
     margin-top:0;
 }
 
-nav:hover i{
-    background:#fff
+.gnbMenu:hover i{
+    background:url(../img/back_green.jpg) repeat;
 }
 
-i:after{
+.gnbMenu i:after{
     content:"";
     width:0%;
     height:100%;
@@ -121,24 +149,212 @@ i:after{
     border-radius:10px;
 }
 
-nav i:nth-child(2):after{
+.gnbMenu i:nth-child(2):after{
     transition-delay:0.3s;
 }
-nav i:nth-child(1):after{
+.gnbMenu i:nth-child(1):after{
     transition-delay:0.2s;
 }
 
-nav:hover i:after{
+.gnbMenu:hover i:after{
     width:100%;
 }
 
 
+.click{
+    display:block;
+    width:100%;
+    height:150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:all .5s;
+}
+.side_menu{
+    width: 896px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.side_menu li{
+    float:left;
+    margin:0 2.8%;
+}
+.side_menu li a{
+    font-size:2.4em;
+    font-weight:bold;
+    line-height:1.2em;
+    position:relative;
+    color:#4c563e;
+}
+.side_menu li a .w_back{
+    width:0;
+    height:10px;
+    background:#98ab7f;
+    position:absolute;
+    bottom:-1%;
+    left:0;
+    text-indent:-9999px;
+    z-index:-1;
+}
+.side_menu li:hover a .w_back{
+    width:100%;
+    transition:all .4s;
+}
+
+
+
+/* ------------------------------------ */
+
+/* 햄버거 메뉴 */
+
+.gnbMenu2{
+    display:none;
+    width:48px;
+    position:absolute;
+    top:50%;
+    right:26px;
+    transform:translateY(-50%);
+    cursor:pointer;
+    z-index:3;
+}
+
+.gnbMenu2 i{
+    display:block;
+    height:2px;
+    background:#6b7a57;
+    margin-top:7px;
+    position:relative;
+    border-radius:10px;
+}
+.gnbMenu2 i:first-child{
+    margin-top:0;
+}
+
+.gnbMenu2:hover i{
+    background:url(../img/back_green.jpg) repeat;
+}
+
+.gnbMenu2 i:after{
+    content:"";
+    width:0%;
+    height:100%;
+    background:#5d8e57;
+    position:absolute;
+    transition: 0.5s;
+    border-radius:10px;
+}
+
+.gnbMenu2 i:nth-child(2):after{
+    transition-delay:0.3s;
+}
+.gnbMenu2 i:nth-child(1):after{
+    transition-delay:0.2s;
+}
+
+.gnbMenu2:hover i:after{
+    width:100%;
+}
+
+.click2{
+    display:none;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    right:-100%;
+    transition:all .5s;
+    z-index:2;
+}
+
+.on{
+    right:0;
+    transition:all .5s;
+}
+
+.side_menu2{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:1;
+}
+.side_menu2 li{}
+.side_menu2 li a{
+    font-size:4.4em;
+    font-weight:bold;
+    color:#fff;
+    line-height:1.8em;
+    position:relative;
+}
+.side_menu2 li a .w_back{
+    width:0;
+    height:20px;
+    background:#6b7a57;
+    position:absolute;
+    bottom:-1%;
+    left:0;
+    text-indent:-9999px;
+    z-index:-1;
+}
+.side_menu2 li:hover a .w_back{
+    width:100%;
+    transition:all .4s;
+}
+.click2 .back{
+    position:absolute;  
+    width:100%;
+    height:100%;
+    background:#111;
+    opacity:.9;
+    overflow:hidden;
+}
+
+.click2 .close{
+    width:50px;
+    height:50px;
+    position:absolute;
+    top: 8%;
+    left: 6%;
+    z-index:1;
+    cursor:pointer;
+}
+
+.click2 .close p{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    z-index:2;
+}
+.click2 .close i{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius:5px;
+    background:#fff;
+    text-indent:-9999px;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    z-index:2;
+}
+.click2 .close i:first-child{
+    transform:rotate(45deg);
+}
+.click2 .close i:last-child{
+    transform:rotate(-45deg);
+}
 
 
 /*본문영역 ----------------------------------------- */
 #container{
     width:100%;
-    height:100%;
+    /* height:100%; */
 }
 #container article .inner{
     width: 1100px;
@@ -393,6 +609,7 @@ nav:hover i:after{
 } */
 
 .introduce .grassFlower{
+    display:none;
     width: 406px;
     height: 346px;
     position: absolute;
@@ -424,7 +641,7 @@ nav:hover i:after{
     /* margin:4% auto; */
     position: absolute;
     top: -9%;
-    left: 28%;
+    left: 32%;
 }
 .skill_list p{
     float:left;
@@ -433,7 +650,7 @@ nav:hover i:after{
 
 /* 제목 애니메이션*/
 .skill_list h2 p:first-child{
-    font-size:3.5em;
+    font-size:2.8em;
     font-weight:bold;
     color:#6b7a57;
     text-align:center;
@@ -1119,33 +1336,23 @@ nav:hover i:after{
 }
 
 
+
 /* 닫기 버튼 디자인 */
-.closeinput{
-    display:none;
-}
-.closer_btn{    
-    position:fixed;
-    top:0;
-    right:0;
-    display:inline-block;
+
+.closer_click{    
+    width:100%;
     width:50px;
     height:50px;
     background:rgb(112, 148, 105);
     color:#fff;
     cursor:pointer;
 }
-.closer_btn p{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-}
-.closer_btn span{
-    display:block;
-    width:25px;
-    height:1px;
-    background:#fff;
-    text-indent:-9999px;
+.closer_click p{
+    font-size:2em;
+    text-align:center;
+    background:#547153;
+    color:#fff;
+    padding:3% 0;
 }
 
 
@@ -1154,11 +1361,10 @@ nav:hover i:after{
 
 }
 
-.tab_menu .close:checked ~ .cont{
+.closer_click:checked ~ .cont{
     height:0;
     transition: all .5s;
 }
-
 
 
 
@@ -1251,10 +1457,10 @@ nav:hover i:after{
 }
 
 
-/* 감사 인사 -----------------------*/
+/* 마지막 소개글 -----------------------*/
 
 .thx{
-    height:100%;
+    height:700px;
 }
 .thx .inner{
     max-width:1100px;
@@ -1281,6 +1487,140 @@ nav:hover i:after{
 
 
 
+/* 감사인사 -----------------------*/
+.happy{
+    text-align:center;
+    padding: 4% 0 1%;
+}
+.happy .inner{
+}
+
+.happy p{
+    font-size: 2em;
+    line-height: 1.2em;
+}
+.happy .thank{}
+.happy .thank:last-child{
+}
+.happy .luv{
+    padding-top:2%;
+}
+.happy .luv img{}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 -----------------------*/
+
+.footer{
+    width:100%;
+    height:217px;
+    position:relative
+}
+.footer .inner{
+    width:1100px;
+    height: 100%;
+    margin:0 auto;
+    position:relative
+}
+
+.footer .f_write{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+}
+.footer .f_write li{
+    color:#fff;
+    font-size:1.1em;
+    opacity:.9;
+}
+.footer .f_write li a{
+    color:#fff;
+    font-size:1.1em;
+}
+.footer .f_write .w1{
+    margin-bottom:5%;
+}
+.footer .f_write .w1 li{
+    font-size:1.5em;
+    line-height:1.2em;
+}
+.footer .f_write .w2 li:first-child{
+    margin-bottom:1%;
+}
+.footer .f_write .w2{
+}
+
+
+.footer .inner .sns{
+    position:absolute;
+    top:15%;
+    right:0;
+    opacity:.5;
+}
+.footer .inner .sns{
+    width:118px;
+}
+.footer .inner .sns a{
+    width:47%;
+    display:block;
+    float:left;
+}
+.footer .inner .sns a:first-child{
+    margin:7px 6% 0 0;
+}
+/* .footer .inner .sns a:last-child img{
+    filter: invert(1);
+} */
+.footer .inner .sns a img{
+    width:100%;
+}
+.footer .f_logo{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    opacity: .5;
+}
+.footer .f_back{
+    width:100%;
+    height:100%;
+    text-indent:-9999px;
+    opacity:.8;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    background-image:url('../img/f_back.png');
+    background-repeat:repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* --------------------------미디어쿼리---------------------------- */
@@ -1304,6 +1644,16 @@ nav:hover i:after{
 }
 
 @media screen and (max-width:1450px){
+    /* 헤더 메뉴 */
+    .side_menu {
+        width: 685px;
+    }
+    .side_menu li {
+        margin: 0 2.3%;
+    }
+    .side_menu li a {
+        font-size: 2em;
+    }
     /* 인트로 높이 */
     .intro {
         height: 803px;
@@ -1322,6 +1672,14 @@ nav:hover i:after{
 }
 
 @media screen and (max-width: 1250px){
+    /* 헤더메뉴 */
+    .side_menu {
+        width: 514px;
+    }
+    .side_menu li a {
+        font-size: 1.5em;
+    }
+
     /* 인트로 높이 */
     .intro {
         height: 758px;
@@ -1378,6 +1736,11 @@ nav:hover i:after{
     }
 }
 
+@media screen and (max-width:1150px) {
+    .footer .inner {
+        width: 95%;
+    }
+}
 @media screen and (max-width:1100px) {
     /* 컨테이너 너비 */
     #container{
@@ -1421,7 +1784,7 @@ nav:hover i:after{
 
     /* 탭메뉴 벚꽃 이미지 */
     .tab_menu ul .tab_btn .cont .pink_flower {
-        right: -3%;
+        right: -2%;
     }
     .tab_menu ul .tab_btn .cont .pink_flower img{
         width:84%;
@@ -1440,6 +1803,30 @@ nav:hover i:after{
     #container article .tab_menu {
         width: 100%;
     }
+
+
+    /* 감사인사 폰트 */
+    .happy p {
+        font-size: 1.7em;
+    }
+    /* 감사인사 이미지 */
+    .happy .luv img {
+        width: 11%;
+    }
+
+    /* 푸터 연락처 폰트 */
+    .footer .f_write .w1 li {
+        font-size: 1.2em;
+    }
+    /* 푸터 카피라이트폰트 */
+    .footer .f_write li {
+        font-size: 1em;
+    }
+    /* 푸터 sns */
+    .footer .inner .sns {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -1455,15 +1842,32 @@ nav:hover i:after{
         transform: translate(-50%, -50%);
     }
     /* 햄버거메뉴 */
-    nav {
+    /* nav {
         width: 32px;
         right: 98px;
         right: 5%;
     }
-    i {
+    .gnbMenu {
+        right: 26px;
+    }
+    .gnbMenu i {
         height: 2px;
         margin-top: 7px;
+    } */
+    
+    
+    /* .gnbMenu2{
+        display:block;
+    } */
+    .gnbMenu{
+        display:none;
     }
+    .click{
+        display:none;
+    }
+    /* .click2{
+    display:block;
+    } */
 
     /* 인트로 높이 */
     .intro {
@@ -1519,6 +1923,20 @@ nav:hover i:after{
     }
     .thx .bottom_write .cont_write {
         font-size: 1.18em;
+    }
+
+
+    /* 감사인사 패딩 */
+    .happy {
+        padding: 24% 0 1%;
+    }
+    /* 감사인사 폰트 */
+    .happy p {
+        font-size: 1.5em;
+    }
+    /* 감사인사 하트 이미지 */
+    .happy .luv img {
+        width: 9%;
     }
 }
 
@@ -1587,7 +2005,7 @@ nav:hover i:after{
     
     /* 탭메뉴 벚꽃 이미지 */
     .tab_menu ul .tab_btn .cont .pink_flower {
-        right: -7%;
+        right: -5%;
     }
     .tab_menu ul .tab_btn .cont .pink_flower img{
         width:65%;
@@ -1698,6 +2116,39 @@ nav:hover i:after{
     /* 마지막 소개 글 */
     .thx .memo img {
         width: 60%;
+    }
+
+    /* 감사인사 패딩 */
+    .happy {
+        padding: 38% 0 1%;
+    }
+
+
+    /* 푸터 높이 */
+    .footer {
+        height: 290px;
+    }
+    /* 푸터 로고 */
+    .footer .f_logo {
+        width: 134px;
+        top: 11%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer .f_logo img{
+        width:100%;
+    }
+    /* 푸터 글 내용 */
+    .footer .f_write {
+        width: 100%;
+        top: 55%;
+    }
+    /* 푸터 sns */
+    .footer .inner .sns {
+        width: 98px;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -1823,7 +2274,7 @@ nav:hover i:after{
     }
     /* 인트로듀스 왼쪽 전체 폰트 */
     .introduce .inner .bg .writeBox .left p {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     /* 인트로듀스 키워드 전체 폰트 */
     .introduce .inner .bg .keyword li span {
@@ -1831,7 +2282,7 @@ nav:hover i:after{
     }
     /* 인트로듀스 사진 크기 */
     .introduce .inner .bg .writeBox .left .photo img{
-        width: 37%;
+        width: 47%;
     }
     /* 인트로듀스 이름 위 마진값 */
     .introduce .inner .bg .writeBox .left .name {
@@ -1862,6 +2313,9 @@ nav:hover i:after{
     }
 
     /* 탭메뉴 바로가기 폰트 */
+    .tab_menu ul .tab_btn label {
+        font-size: 1.2em;
+    }
     .tab_menu ul .tab_btn .cont .go_now a {
         font-size: 1.1em;
     }
@@ -1871,7 +2325,7 @@ nav:hover i:after{
     }
     /* 탭메뉴 벚꽃 이미지 */
     .tab_menu ul .tab_btn .cont .pink_flower {
-        right: -19%;
+        right: -17%;
     }
     .tab_menu ul .tab_btn .cont .pink_flower img {
         width: 39%;
@@ -1925,6 +2379,22 @@ nav:hover i:after{
     .etc .etc_text_slider span:first-child {
         font-size: 2em;
         margin-top:3%;
+    }
+
+
+    /* 감사인사 패딩 */
+    .happy {
+        padding: 54% 0 1%;
+    }
+    /* 감사인사 하트 이미지 */
+    .happy .luv img {
+        width: 15%;
+    }
+
+
+    /* 푸터 폰트 크기 */
+    .footer .f_write li {
+        font-size: .9em;
     }
 }
 
@@ -2019,7 +2489,7 @@ nav:hover i:after{
         width: 33%;
     }
     .tab_menu ul .tab_btn .cont .pink_flower {
-        right: -25%;
+        right: -22%;
     }
     /* 탭메뉴 모든 이미지 */
     .tab_menu ul .tab_btn .cont img {
@@ -2078,6 +2548,14 @@ nav:hover i:after{
         font-size: 1.05em;
     }
     
+    /* 감사인사 패딩값 */
+    .happy {
+        padding: 25% 0 1%;
+    }
+    /* 감사인사 폰트사이즈 */
+    .happy p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 390px){
@@ -2103,6 +2581,11 @@ nav:hover i:after{
     .intro .grassOne .oR {
         right: -158%;
     }
+
+    /* 감사인사 패딩 */
+    .happy {
+        padding: 30% 0 1%;
+    }
 }
 @media screen and (max-width: 365px){
    /* 인트로 양쪽 나뭇잎 이미지 */
@@ -2111,6 +2594,11 @@ nav:hover i:after{
     }
     .intro .grassOne .oR {
         right: -167%;
+    }
+
+    /* 탭메뉴 벚꽃 포지션 */
+    .tab_menu ul .tab_btn .cont .pink_flower {
+        right: -25%;
     }
 }
 
@@ -2150,6 +2638,11 @@ nav:hover i:after{
     /* 탭메뉴 보라색 꽃 이미지 */
     .tab_menu ul .tab_btn .cont .purple_flower {
         right: -26%;
+    }
+
+    /* 감사인사 폰트사이즈 */
+    .happy p {
+        font-size: 1em;
     }
 }
 

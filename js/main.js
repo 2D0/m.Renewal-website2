@@ -7,8 +7,54 @@
 
 
 
+//---------------햄버거 메뉴 클릭
 
-    
+$(document).ready(function(){
+    $('.click').hide();
+    $('.gnbMenu').click(function(){
+      $('.click').slideToggle('fast');
+    });
+});
+/* $(function() {
+  $(".click").click(function() {
+    $(".side_menu").addClass('on');	
+    return false
+  });
+  $(".close").click(function() {
+    $(".side_menu").removeClass('on');	
+    return false
+  });
+});
+ */
+/* $(document).ready(function(){
+  $('.gnbMenu').click(function(){
+    var submenu = $(this).next('click');
+
+    if(submenu.is(':visible')){
+       submenu.slideUp();
+    }else{
+      submenu.slideDown();
+    }
+
+
+  });
+
+}); */
+
+
+
+
+$(function() {
+  $(".gnbMenu2").click(function() {
+    $(".click2").addClass('on');	
+    return false
+  });
+  $(".close").click(function() {
+    $(".click2").removeClass('on');	
+    return false
+  });
+});
+
   // --------클릭시 반짝이 모션
       var first = new mojs.Shape({
         shape:'circle', //동그라미
@@ -30,26 +76,7 @@
     })
 
 
-/* BX슬라이더 */
-/* $('.etc ul').bxSlider({
-minSlides:2,
-maxSlides:4,
-slideWidth:1100,
-sliderMargin:30,
-moveSlides:1,
-
-auto: false,
-controls: true,
-autoControls: false,
-stopAutoOnClick: true,
-pager: false,
-}); */
-
-
-
-
-
-//etc_Slider 슬릭---------------------
+//etc_Slider 슬릭옵션---------------------
   
 
 $('.etc_slider').slick({
